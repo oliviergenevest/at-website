@@ -1,0 +1,35 @@
+@import "../../config/variables";
+
+.container {
+  margin: 0 auto;
+  max-width: $container;
+ 
+  padding-left: $distance;
+  padding-right: $distance;
+}
+
+.fluid {max-width:100rem;}
+
+.first {
+   padding-top:110px;
+}
+
+.text {
+  max-width: $container-text;
+}
+
+.footer {
+   padding-top: .5rem;
+   padding-bottom: .5rem;
+  color:$brand-primary;
+  display:flex;
+    span:first-child {
+      margin-right: auto;
+    }
+    font-size:12px;
+}
+
+.biography {
+
+  background-color:#2e2e2e;
+}

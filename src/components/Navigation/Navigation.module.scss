@@ -1,0 +1,194 @@
+@import "../../config/variables";
+
+.wrapper {
+  align-items: center;
+  display: flex;
+
+  a {
+    color: $body-color;
+
+    &:hover {
+      color: $brand-secondary;
+    }
+  }
+}
+
+
+  
+ 
+
+.navigation,
+.name,
+.socialMedia {
+  display: flex;
+  flex: auto;
+  /*justify-content: center;*/
+    align-self: center;
+}
+
+.socialMedia {
+      display: flex;
+      flex: inherit;
+      margin-left:1rem;
+      margin-right:4rem;
+ @include for-phone-only {
+      margin-right:4rem;
+  }
+}
+
+.navigation > span {
+  margin-left: auto;
+}
+
+.socialMedia > span {
+  margin-left: auto;
+}
+
+/* Navigation classique */ 
+.navigation {
+  a:not(:first-child) {
+    margin-left: 1rem;
+  }
+  justify-content: right;
+  display: none;
+   @include for-phone-only {
+    display: none;
+  }
+}
+
+.name {
+  h3 {
+    font-size: inherit;
+    margin-bottom: 0 !important;
+  }
+
+
+  a {
+
+    &:hover,
+    &:focus {
+      color: $body-color;
+      text-decoration: none;
+    
+    }
+  }
+}
+
+.socialMedia {
+  a {
+    font-size: 1.5rem;
+  }
+
+  a:not(:first-child) {
+    margin-left: 1rem;
+  }
+}
+
+
+
+/* Name or logo */
+.mobileNavName {
+  left: 1rem;
+  position: fixed;
+  top: 8px;
+
+  h3 {
+    font-size: 23px !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+
+
+.mobileNavSocialMedia {
+  color: $brand-secondary;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color:$brand-secondary;
+
+  a:not(:first-child) {
+    margin-left: 1.5rem;
+
+  }
+}
+
+
+
+/*MENU MOBILE*/
+
+
+ .bmBurgerButton {
+  cursor:pointer;
+  /*position: fixed;
+  width: 56px;
+  height: 30px;
+  right: 1rem;
+  top: 28px;*/
+  align-self: center;
+  z-index:2000;
+ /* display: none;*/
+   @include for-phone-only {
+    display: block;
+  }
+}
+ .bmBurgerButton:hover {
+    div span:nth-child(2) {
+      right:0px!important;
+      background:#bada55!important;
+    }
+
+ }
+
+
+/* Color/shape of burger icon bars */
+ .bmBurgerBars {
+  background: #fff;
+  height:4px;
+}
+
+.bmBurgerButton div span:nth-child(2) {
+  right:5px;
+}
+
+/* Position and sizing of clickable cross button */
+.bmCrossButton {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bmCross {
+  background: #fff;
+}
+
+/* General sidebar styles */
+ .bmMenu {
+  background: $brand-primary;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+ .bmMorphShape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+ .bmItemList {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+ .bmItem {
+  display: inline-block;
+
+  color:white;
+
+}
+
+/* Styling of overlay */
+ .bmOverlay {
+  background: rgba(0, 0, 0, 0.9);
+  z-index:1000!important;
+}

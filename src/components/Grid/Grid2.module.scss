@@ -1,0 +1,38 @@
+@import "../../config/variables";
+
+.gridContainer {
+  	display:inline-grid;
+    height:100vh;
+    grid-template-rows: repeat(5, minmax(50px, auto));
+    grid-template-columns: repeat(5,minmax(50px, auto));
+    margin-bottom: 5em;
+    width:100%;
+}
+
+.image {
+	grid-column: 1 / 5;
+	grid-row: 1/6;
+	overflow: hidden;	
+}
+
+.image > div {height:100%;}
+
+
+.text {
+	grid-column: 4 / 6;
+		grid-row: 2/5;
+	
+	z-index:1;  
+	display:flex;
+	align-items: flex-start;
+  justify-content: center;
+  max-width:500px;
+  background-color:$brand-secondary;
+  padding:1.6em;
+      justify-self: center;
+ 
+p {
+	align-self: center;
+}
+
+}

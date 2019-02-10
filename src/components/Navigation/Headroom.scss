@@ -1,0 +1,133 @@
+@import "../../config/variables";
+
+$transition-headroom: all 0.35s ease-in-out;
+
+
+.headroom-wrapper {
+/*  width: 100%;
+ 
+ @include for-phone-only() {
+    display: none;
+  }
+  */
+
+}
+
+.headroom {
+  background-color: $brand-primary;
+   padding: 0.5rem 2rem;
+  width: 100%;
+  display: flex;
+  z-index: 1200; 
+
+  a {
+    text-transform:uppercase;
+      font-size: inherit;
+      color:$brand-third;
+      text-decoration:none;
+  }
+
+  a.active {
+    color: $brand-third;
+
+  }
+
+  img {margin-bottom: 0}
+
+   @include for-phone-only {
+   padding: 0.5rem 1rem;
+  }
+}
+
+
+
+.headroom--unfixed {
+  position: relative;
+  transform: translateY(0);
+  transition: $transition-headroom;
+ 
+}
+
+.headroom--scrolled {
+  transition: $transition-headroom;
+}
+
+.headroom--unpinned {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: $transition-headroom;
+
+}
+
+.headroom--pinned {
+/*background-color: $brand-secondary;*/
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  transform: translateY(0%);
+  transition: $transition-headroom;
+}
+
+
+
+
+
+/*
+header {
+
+  @include for-phone-only() {
+     height:97px;
+  }
+}*/
+
+
+
+
+
+
+
+
+/* EFFET codedrop sur les liens du menu non mobile*/
+/* Effect 4: bottom border enlarge */
+
+.headroom nav a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: $brand-third;
+  content: '';
+  opacity: 0;
+ 
+  transition: height 0.3s, opacity 0.3s, transform 0.3s;
+ 
+  transform: translateY(-10px);
+}
+
+.headroom nav a:hover::after,
+.headroom nav a:focus::after {
+  height: 3px;
+  opacity: 1;
+  transform: translateY(0px);
+}
+.headroom nav a {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  color: $brand-third;
+  text-decoration: none;
+  text-transform: uppercase;
+
+
+
+  font-size: inherit;
+}
+
+.headroom nav a:hover,
+.headroom nav a:focus {
+  outline: none;
+}
+
+
+
+

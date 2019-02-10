@@ -1,0 +1,45 @@
+@import "../config/variables";
+
+/* Global styles - peut aussi se faire depuis typography.js (overrideStyles)*/
+
+body {
+  background-color:$brand-primary;
+  color:$brand-third;
+}
+
+:focus {
+    outline: 1px solid #ffffff29;
+}
+
+.page {
+    position: relative;
+  width: 100%;
+    min-height:100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex:1;
+}
+/*
+.content {
+  flex-grow:1;
+}
+*/
+
+
+
+
+
+
+a {
+  color:inherit;
+}
+
+footer {
+  background-color:$brand-third;
+ 
+}
+

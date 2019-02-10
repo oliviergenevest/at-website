@@ -1,0 +1,60 @@
+@import "../../config/variables";
+
+.gridContainer {
+  	display:grid;
+    height:calc(100vh);
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr ;
+   
+    /*@include for-tablet-landscape-down {
+		 height:auto;
+	}*/
+}
+
+.image {
+	grid-column: 1;
+	grid-row: 1;
+	overflow: hidden;
+	filter:opacity(40%);
+}
+
+.image > div {height:100%;}
+
+.inner {
+	grid-column: 1;
+	grid-row:1;
+	z-index:10; 
+	display:flex;
+	align-items: center;
+	 justify-content: center; 
+	 flex-direction:column;
+}
+.subTitle {
+	
+	
+  h2 {
+  	font-weight:700;
+  	color:white;
+  	    font-size: 3.8rem;
+  	 @include for-tablet-landscape-down {
+		 font-size: 3rem;
+	}
+  }
+}
+
+.hero {
+	
+	z-index:1;
+	
+  
+
+	.title {
+		color: white;
+	    font-size: 3.8rem;
+	    font-weight:900;
+	 
+	    @include for-tablet-landscape-down {
+		 font-size: 3rem;
+	}
+	}
+}
