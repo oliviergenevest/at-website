@@ -114,8 +114,8 @@ export default class Navigation extends Component {
             
             <nav className={styles.navigation}>
               <span>
-                <Link to="/credits"  activeClassName="active">Credits</Link>
-                <Link to="/"  activeClassName="active">Research</Link>
+              
+                <Link to="/credits"  activeClassName="active">Research</Link>
                 <Link to="/"  activeClassName="active">Projects</Link>
                 <Link to="/about"  activeClassName="active">About Alan</Link>
               </span>

@@ -25,7 +25,7 @@ const Grid1 = ({image, text1, heroText, text3}) => (
 		           </Fade>
 		       </div>
 		        <Fade bottom  delay={1500} distance="50px">
-		       <p className= {styles.inProgress}>[ website in progress... ]</p>
+		       <p className= {styles.inProgress}> [ Under construction ] </p>
 		       </Fade>
 			</div>
 	        <div className= {styles.image} > 

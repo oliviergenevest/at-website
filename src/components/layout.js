@@ -39,7 +39,7 @@ const Layout = ({ children }) => (
         </main>      
          <footer>
            <Container fluid footer >
-              <span><Link to="/credits">Crédits</Link></span>
+              <span><Link to="/credits">Credits</Link></span>
               <span>© Alan Tod - 2019</span>
             </Container>
           </footer>

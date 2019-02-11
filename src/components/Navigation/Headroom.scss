@@ -10,7 +10,7 @@ $transition-headroom: all 0.35s ease-in-out;
     display: none;
   }
   */
-
+ background-color:white;
 }
 
 .headroom {
@@ -123,6 +123,7 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   font-size: inherit;
+  padding-left:0.8rem;
 }
 
 .headroom nav a:hover,
