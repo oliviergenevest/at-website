@@ -1,18 +1,18 @@
 @import "../../config/variables";
-
-.wrapper {
+/*
+.headroom-wrapper {
   align-items: center;
   display: flex;
 
   a {
-    color: $body-color;
+    color: $brand-text;
 
     &:hover {
-      color: $brand-secondary;
+      color: lighten($brand-text,20%);
     }
   }
 }
-
+*/
 
   
  
@@ -50,7 +50,7 @@
     margin-left: 1rem;
   }
   justify-content: right;
-  display: none;
+
    @include for-phone-only {
     display: none;
   }
@@ -67,7 +67,7 @@
 
     &:hover,
     &:focus {
-      color: $body-color;
+      color: $brand-text;
       text-decoration: none;
     
     }
@@ -101,10 +101,10 @@
 
 
 .mobileNavSocialMedia {
-  color: $brand-secondary;
+  color: $brand-text;
   font-size: 1.5rem;
   margin-top: 2rem;
-  color:$brand-secondary;
+  color:$brand-text;
 
   a:not(:first-child) {
     margin-left: 1.5rem;
@@ -119,6 +119,7 @@
 
  .bmBurgerButton {
   cursor:pointer;
+
   /*position: fixed;
   width: 56px;
   height: 30px;
@@ -126,7 +127,7 @@
   top: 28px;*/
   align-self: center;
   z-index:2000;
- /* display: none;*/
+  display: none;
    @include for-phone-only {
     display: block;
   }
@@ -134,15 +135,15 @@
  .bmBurgerButton:hover {
     div span:nth-child(2) {
       right:0px!important;
-      background:#bada55!important;
+      background:$brand-cta!important;
     }
 
  }
 
 
 /* Color/shape of burger icon bars */
- .bmBurgerBars {
-  background: #fff;
+ .bmBurgerButton div span {
+  background: $brand-text!important;
   height:4px;
 }
 
@@ -158,12 +159,12 @@
 
 /* Color/shape of close button cross */
 .bmCross {
-  background: #fff;
+  background:  $brand-text;
 }
 
 /* General sidebar styles */
  .bmMenu {
-  background: $brand-primary;
+  background: $brand-text;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }

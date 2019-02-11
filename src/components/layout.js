@@ -40,7 +40,7 @@ const Layout = ({ children }) => (
          <footer>
            <Container fluid footer >
               <span><Link to="/credits">Crédits</Link></span>
-              <span>© WEB Drôme- 2019</span>
+              <span>© Alan Tod - 2019</span>
             </Container>
           </footer>
       </div>

@@ -16,10 +16,10 @@ overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
    textTransform:'uppercase',
    fontWeight:700,
   fontSize:rhythm(1),
-  color:'white',
+  
   },
   h2: {
-    color:'white',
+      fontWeight:700,
   },
   '.title':
   { color: 'inherit',

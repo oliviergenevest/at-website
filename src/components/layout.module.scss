@@ -3,8 +3,8 @@
 /* Global styles - peut aussi se faire depuis typography.js (overrideStyles)*/
 
 body {
-  background-color:$brand-primary;
-  color:$brand-third;
+  background-color:$brand-bg;
+  color:$brand-text;
 }
 
 :focus {
@@ -38,8 +38,12 @@ a {
   color:inherit;
 }
 
+header {
+height:5rem;
+}
+
 footer {
-  background-color:$brand-third;
- 
+  background-color:$brand-cta;
+
 }
 

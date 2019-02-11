@@ -15,10 +15,26 @@
 	grid-column: 1;
 	grid-row: 1;
 	overflow: hidden;
-	filter:opacity(40%);
+	/*filter:opacity(40%);*/
 }
 
-.image > div {height:100%;}
+.image > div {
+
+	height:100%;
+	
+	/* Ajout d'un calque vert transparent sur l'image*/
+	&:before {
+		content: '';
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background-color: $brand-cta;
+	    opacity: .25;
+	    z-index:1;
+	}
+}
 
 .inner {
 	grid-column: 1;
@@ -57,4 +73,9 @@
 		 font-size: 3rem;
 	}
 	}
+}
+
+.inProgress {
+	color:white;
+	background-color:$brand-cta;
 }

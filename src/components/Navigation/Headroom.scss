@@ -14,23 +14,29 @@ $transition-headroom: all 0.35s ease-in-out;
 }
 
 .headroom {
-  background-color: $brand-primary;
+
    padding: 0.5rem 2rem;
   width: 100%;
   display: flex;
   z-index: 1200; 
 
   a {
-    text-transform:uppercase;
+      text-transform:uppercase;
+      font-weight:700;
       font-size: inherit;
-      color:$brand-third;
+      color:$brand-text;
       text-decoration:none;
+      &:hover {
+      color: lighten($brand-text,20%);
+    }
   }
 
   a.active {
-    color: $brand-third;
+  
 
   }
+
+
 
   img {margin-bottom: 0}
 
@@ -60,7 +66,7 @@ $transition-headroom: all 0.35s ease-in-out;
 }
 
 .headroom--pinned {
-/*background-color: $brand-secondary;*/
+background-color: white;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
   position: fixed;
   transform: translateY(0%);
@@ -92,34 +98,30 @@ header {
 .headroom nav a::after {
   position: absolute;
   top: 100%;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 50%;
   height: 1px;
-  background: $brand-third;
+  background: $brand-cta;
   content: '';
   opacity: 0;
- 
   transition: height 0.3s, opacity 0.3s, transform 0.3s;
- 
   transform: translateY(-10px);
 }
 
-.headroom nav a:hover::after,
-.headroom nav a:focus::after {
-  height: 3px;
+.headroom nav a.active::after,
+.headroom nav a.active::after {
+  height: 5px;
   opacity: 1;
   transform: translateY(0px);
+
 }
 .headroom nav a {
   position: relative;
   display: inline-block;
   outline: none;
-  color: $brand-third;
+
   text-decoration: none;
   text-transform: uppercase;
-
-
-
   font-size: inherit;
 }
 
@@ -127,7 +129,3 @@ header {
 .headroom nav a:focus {
   outline: none;
 }
-
-
-
-

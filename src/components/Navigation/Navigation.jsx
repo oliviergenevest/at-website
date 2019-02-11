@@ -9,7 +9,7 @@ import config from '../../config/SiteConfig'
 import styles from './Navigation.module.scss'
 import './Headroom.scss'
 /*import { rhythm } from '../../utils/typography'*/
-import Logo from "../../images/gatsby-icon.png"
+
 export default class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -65,18 +65,22 @@ export default class Navigation extends Component {
             >
 
               <Link to="/" onClick={() => this.closeMenu()}>
-                <h1 >{config.siteTitle}</h1>
+                Homepage
               </Link>
              
               <Link to="/tilt" activeClassName="active" onClick={() => this.closeMenu()}>
-                TiLt
+                Research
               </Link>
             
              
               
-             
               <Link to="/" activeClassName="active" onClick={() => this.closeMenu()}>
-                Contact
+                Projects
+              </Link>
+           
+             
+              <Link to="/about" activeClassName="active" onClick={() => this.closeMenu()}>
+                About Alan
               </Link>
            
              <div className={styles.mobileNavSocialMedia}>
@@ -95,14 +99,14 @@ export default class Navigation extends Component {
 
       <header>
         <Headroom calcHeightOnResize disableInlineStyles  >
-          <Fade down duration={2000} className={styles.wrapper}>
+          
 
             <div className={styles.name}>
               <span>
                 <Link to="/" >
              
-                  <img src={Logo} alt={config.siteAlt} width="0px" />
-                  WEB Drôme
+                  
+                  Alan Tod
                 </Link>
               </span>
            
@@ -110,13 +114,10 @@ export default class Navigation extends Component {
             
             <nav className={styles.navigation}>
               <span>
-              
-               
-                <Link to="/tilt"  activeClassName="active">Tilt</Link>
-                <Link to="/"  activeClassName="active">Contact</Link>
- 
-           
-
+                <Link to="/credits"  activeClassName="active">Credits</Link>
+                <Link to="/"  activeClassName="active">Research</Link>
+                <Link to="/"  activeClassName="active">Projects</Link>
+                <Link to="/about"  activeClassName="active">About Alan</Link>
               </span>
             </nav>
              <div className={ styles.bmBurgerButton }>
@@ -134,7 +135,7 @@ export default class Navigation extends Component {
             />
             </div> 
              
-          </Fade>
+         
       </Headroom>
 
           
