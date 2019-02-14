@@ -1,8 +1,15 @@
+const dotenv = require("dotenv");
+
+if (process.env.ENVIRONMENT !== "production") {
+  dotenv.config();
+}
+ 
+const { spaceId, accessToken } = process.env;
 module.exports = {
   siteMetadata: {
     title: `Alan Tod`,
     description: `Forest is art`,
-    author: `Olivier Genevest`,
+    author: `Alan Tod`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -12,6 +19,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+     {
+      resolve: `gatsby-source-contentful`,
+      options: {
+          spaceId,
+        accessToken
       },
     },
     {
@@ -31,7 +45,7 @@ module.exports = {
             // It's important to specify the maxWidth (in pixels) of
             // the content container as this plugin uses this as the
             // base for generating different widths of each image.
-            maxWidth: 1100,
+            maxWidth: 1400,
           },
         },
         ],

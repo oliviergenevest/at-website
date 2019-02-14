@@ -12,44 +12,44 @@ const About = () => (
     
     <h1>About Alan</h1>
     <p>
-    	Total art, Land-art, Painting, Theory, Photography, Bio arte and Performance.
-	</p>
-	<p>
-		I look for the vibrations of reality and of perspective. My work is about optic.
-	</p>
-	<p>
-	I am first and foremost an artist of the forest, and my sole ambition is to spread the song of the trees across the earth and make the forest a piece of art. From a theoretical point of view, I am a painter of the classical questions in art, and as such I serve nature, its beauty, and its love for humanity.
-	</p>
-	<p>
-"Planting forests, awaiting the eagles’ return" is the sound of the new economy and a new spirituality.  A forest is a family, a new state of mind for human kind. The vibration between life and death, darkness and light, water and sun, soil and sky is making the green melody of a landscape painting.
-</p>
-	<p>
-FOREST is, in and of itself, a living, vibrationist artwork. It was proposed tangentially to the pictorial research into polyphony, and its aim is to propagate the growth of natural forest, with the help of humanity. As such, the project produces forests, stories, photographs, films, paintings, installations and performances.
-</p>
-	<p>
-Adhering to the collaborative tradition of painting and related to the movement of Bio arte, the FOREST questions accepted truths, and brings the spectator into this debate. As the heir of total art, this living piece can be seen as the ultimate work of love between nature and humanity.
-</p>
-	<p>
-From a purely pictorial point of view, FOREST is akin to Claude Monet’s undertakings in Giverny, where he planted his garden before painting it.As an objet d’art, FOREST is a work of ‘inspired botany’; the continued transformation of the Sintra forest and the Park of Pena in Portugal, a botanical forest planted in the 19th Century by King Ferdinand II of Portugal, who was nicknamed the Artist King.Today Sintra forest is renowned for its positive environmental impact. FOREST is a continuation of this same spirit.
-</p>
-	<p>
-Using sincerity as a key for humility, I try to use constraint as a freedom or a chance.
-</p>
-	<p>
-There is nothing to invent, only to discover.
+    	Alan Tod is the artistic identity of Julien Isoré, French painter and director involved in Total art. After graduate in comparative intellectual property law in Paris in 2001, Julien Isoré worked for 7 years for the media-TV- business industry as story editor and director. In 2005, he open his first painting studio in Paris and start the international campaign for LOVE (2007-2012) where he experimented total art. (<a href="http://www.artforlove.fr/" title="www.artforlove.fr" target="blank">www.artforlove.fr</a>)  In 2007 he inter the school of fine art of Lisbon (CIEBA) as independent researcher In comparative anatomy in collaboration with school of medicine of Lisbon, with School of sociology of imaginary of La Sorbonne university and with Les cahiers européens de l’imaginaire edition CNRS. 
 
-With others :
-http://www.cacaoeuropa.com
-http://www.lescahiers.eu/
-http://www.artforlove.fr
-	
 	</p>
-    <h2>Website</h2>
-    <p><a href="https://oliviergenevest.info">Olivier Genevest</a></p>
-    
-    <h2>Photos</h2>
-    <p><a href="https://crespeauphoto.fr">Cyril Crespeau</a></p>
-
+	<p>
+			 In 2015, Julien Isoré became Alan Tod, the forest artist and since, he never stop to be.. 
+	</p>
+  
+<h2>Expositions Publiques :</h2>
+<p>2018 Novembre : Forest Art. FACTT. Centro de Cultura Digital, Mexico city. MEX.
+Octobre : Forest Art. FACTT. Bio art Lab. School of visual art, New York. USA
+Septembre : Forest Art. FACTT. Galeria Ler Devagar, Lisbonne. PT
+Aout : Forest Art . Galeria Cultivamos cultura. Sao Luis. PT
+Février : Forest Art , « Texturas », Bellas artes, Lisbonne. PT
+2017 Forest art : « Monstras de Sao Luis », Galeria Cultivamos Cultura, Sao Luis. PT
+2016 Forest art : « Andanças Festival », Alentejo, Portugal. PT
+2014 Peinture : « O manifesto da Gruta ». Plataforma Revolver. Lisbonne. PT
+2012 Performance : « Diner D’adieu de l’humanité ». Galerie La Générale. Paris. FR
+2011 Commission : « Processus de l’imaginaire ». Plataforma Revolver. Lisbonne. PT
+Dessins «Anatomie comparative», Musée d’Histoire Naturelle de Lisbonne. PT
+Dessins. Corporis Fabrica, Université de Médecine, Lisbonne. PT
+Performance : « LOVE » , white museum. New York. USA
+2010 Performance : « LOVE » Grand Mother india Agency. Mumbai. IND.
+2009 Peinture, Institut français du Portugal, Lisbonne. PT.
+Performance : « LOVE ». University of Shanghai. CHI.
+Peinture, «Artistas Solidarios», Oïkos, Casino Lisboa, Lisbonne. PT
+2008 Performance : « LOVE » Place Georges-Pompidou. Paris. FR
+Performance : « LOVE » Place du palaise Royale. Bruxelles. BEL
+2005 Peinture. Galerie des AAB, Paris.FR.
+Publications :
+2017-2019 : Publication de visuel de FOREST ART dans le catalogue de la
+galerie Cultivamos Cultura.
+2011-2014 : Publications de dessins, poèmes, fictions, critiques d’art et
+portfolio de performances et d’expositions dans «Les cahiers européens de
+l’imaginaire » Cnrs éditons, Paris. FR
+2010 : Visuel de Peintures, catalogue «Artistas Solidarios», Oïkos, Casino
+Lisboa, 2010, Lisbonne.
+2009. Interview «Projet AMOUR», Revue «SO chic», Paris.
+</p>
 </Container>
   </Layout>
 )

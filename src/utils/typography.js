@@ -8,18 +8,18 @@ const typography = new Typography( {
  
   baseFontSize: "18px",
   baseLineHeight: 1.666,
-  headerFontFamily: ["Raleway","sans-serif"],
-  bodyFontFamily: ["Raleway", "sans-serif"],
+  headerFontFamily: ["Muli","sans-serif"],
+  bodyFontFamily: ["Didact Gothic", "sans-serif"],
 overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
   h1: {
-    fontFamily: ['Raleway', 'sans-serif'].join(','),
+    fontFamily: ['Muli', 'sans-serif'].join(','),
    textTransform:'uppercase',
-   fontWeight:700,
+  // fontWeight:700,
   fontSize:rhythm(1),
   
   },
   h2: {
-      fontWeight:700,
+    //   fontWeight:700,
   },
   '.title':
   { color: 'inherit',

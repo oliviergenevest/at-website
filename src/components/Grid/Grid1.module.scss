@@ -31,6 +31,7 @@
 	    bottom: 0;
 	    left: 0;
 	    background-color: $brand-cta;
+	    background-color: #607d01;
 	    opacity: .25;
 	    z-index:1;
 	}
@@ -49,7 +50,7 @@
 	
 	
   h2 {
-  	font-weight:700;
+  	font-weight:800;
   	color:white;
   	    font-size: 3.8rem;
   	 @include for-tablet-landscape-down {
@@ -61,14 +62,11 @@
 .hero {
 	
 	z-index:1;
-	
-  
-
 	.title {
 		color: white;
 	    font-size: 3.8rem;
-	    font-weight:900;
-	 
+	    font-weight:800;
+	 	text-transform: capitalize;
 	    @include for-tablet-landscape-down {
 		 font-size: 3rem;
 	}

@@ -6,6 +6,10 @@
  
   padding-left: $distance;
   padding-right: $distance;
+   @include for-phone-only {
+   padding-left: 1rem;
+   padding-right: 1rem;
+  }
 }
 
 .fluid {max-width:100rem;}
@@ -26,10 +30,12 @@
     span:first-child {
       margin-right: auto;
     }
-    font-size:12px;
+    font-size:14px;
 }
+
+/*
 
 .biography {
 
   background-color:#2e2e2e;
-}
+}*/

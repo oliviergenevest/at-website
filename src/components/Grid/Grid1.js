@@ -1,8 +1,5 @@
 import React from 'react'
-/*import { Link } from 'gatsby'
-import Img from 'gatsby-image'*/
-import ScrollDownAnimation from '../ScrollDownAnimation/ScrollDownAnimation'
-/*import { Slug } from 'mauerwerk'*/
+import { Link } from 'gatsby'
 import { Fade } from "react-reveal"
 import styles from './Grid1.module.scss'
 
@@ -15,7 +12,7 @@ const Grid1 = ({image, text1, heroText, text3}) => (
 	       <div className = {styles.inner} >
 		       <div className= {styles.hero}>
 		         <Fade bottom delay={500} distance="50px">
-		          <span className= {styles.title}>{ heroText.text }</span>
+		          <h1 className= {styles.title}>{ heroText.text }</h1>
 		         </Fade>
 		       </div>
 
@@ -25,7 +22,7 @@ const Grid1 = ({image, text1, heroText, text3}) => (
 		           </Fade>
 		       </div>
 		        <Fade bottom  delay={1500} distance="50px">
-		       <p className= {styles.inProgress}> [ Under construction ] </p>
+		       <p className= {styles.inProgress}> [ <Link to="/research">{text3.text}</Link> ] </p>
 		       </Fade>
 			</div>
 	        <div className= {styles.image} > 

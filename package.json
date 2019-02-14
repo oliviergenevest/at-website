@@ -17,30 +17,26 @@
     "gatsby-plugin-typography": "^2.2.4",
     "gatsby-remark-copy-linked-files": "^2.0.8",
     "gatsby-remark-images": "^3.0.1",
+    "gatsby-source-contentful": "^2.0.29",
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-remark": "^2.2.0",
     "gatsby-transformer-sharp": "^2.1.8",
     "lodash": "^4.17.11",
-
     "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-burger-menu": "^2.5.4",
     "react-dom": "^16.6.3",
-    
     "react-hamburger-menu": "^1.1.1",
     "react-headroom": "^2.2.4",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.2.2",
-
     "react-motion-ui-pack": "^0.10.3",
-  
     "react-reveal": "^1.2.2",
     "react-spring": "^7.2.8",
-
     "react-typography": "^0.16.18",
-
-    "typeface-montserrat": "^0.0.54",
+    "typeface-didact-gothic": "^0.0.54",
+    "typeface-muli": "^0.0.71",
     "typeface-raleway": "^0.0.54",
     "typography": "^0.16.18",
     "typography-breakpoint-constants": "^0.16.18",

@@ -5,13 +5,12 @@ import Navigation from './Navigation/Navigation'
 import Container from './Container/Container'
 /*import Header from './header'*/
 
-import 'typeface-montserrat'
-import 'typeface-raleway'
-
+/*import 'typeface-montserrat'*/
+import 'typeface-muli'
+import "typeface-didact-gothic"
 
 import styles from './layout.module.scss'
 /*import AudioPlayer from '../components/Player/player'*/
-
 
 
 

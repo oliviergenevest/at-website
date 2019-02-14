@@ -2,6 +2,10 @@
 
 /* Global styles - peut aussi se faire depuis typography.js (overrideStyles)*/
 
+html {
+  /*overflow-y:auto;*/
+}
+
 body {
   background-color:$brand-bg;
   color:$brand-text;
@@ -23,15 +27,6 @@ body {
 main {
   flex:1;
 }
-/*
-.content {
-  flex-grow:1;
-}
-*/
-
-
-
-
 
 
 a {
@@ -44,6 +39,5 @@ height:5rem;
 
 footer {
   background-color:$brand-cta;
-
 }
 

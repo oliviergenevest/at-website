@@ -6,7 +6,7 @@
 
 // You can delete this file if you're not using it
 
-
+/*
 import pageElementWithTransition from './src/utils/wrapPageElement'
 
-export const wrapPageElement = pageElementWithTransition
+export const wrapPageElement = pageElementWithTransition */

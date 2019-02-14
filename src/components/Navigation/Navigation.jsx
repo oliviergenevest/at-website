@@ -50,7 +50,7 @@ export default class Navigation extends Component {
 
       <div className={styles.mobileNavContent}> 
            
-              <Menu right isOpen={this.state.menuOpen} onStateChange={this.handleStateChange} width="350px" 
+              <Menu right isOpen={this.state.menuOpen} onStateChange={this.handleStateChange}  
             burgerButtonClassName={ styles.bmBurgerButton }
             burgerBarClassName={ styles.bmBurgerBars }
             crossButtonClassName={ styles.bmCrossButton } 
@@ -68,13 +68,13 @@ export default class Navigation extends Component {
                 Homepage
               </Link>
              
-              <Link to="/tilt" activeClassName="active" onClick={() => this.closeMenu()}>
+              <Link to="/research" activeClassName="active" onClick={() => this.closeMenu()}>
                 Research
               </Link>
             
              
               
-              <Link to="/" activeClassName="active" onClick={() => this.closeMenu()}>
+              <Link to="/projects" activeClassName="active" onClick={() => this.closeMenu()}>
                 Projects
               </Link>
            
@@ -84,12 +84,10 @@ export default class Navigation extends Component {
               </Link>
            
              <div className={styles.mobileNavSocialMedia}>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <a href={config.instagramPageUrl} target="_blank" rel="noopener noreferrer">
                   <FaInstagram />
                 </a>
-                <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-                  <FaTwitter />
-                </a>
+              
                 <a href="{config.facebookPageUrl}" target="_blank" rel="noopener noreferrer">
                   <FaFacebook />
                 </a>
@@ -115,8 +113,8 @@ export default class Navigation extends Component {
             <nav className={styles.navigation}>
               <span>
               
-                <Link to="/credits"  activeClassName="active">Research</Link>
-                <Link to="/"  activeClassName="active">Projects</Link>
+                <Link to="/research"  activeClassName="active">Research</Link>
+                <Link to="/projects"  activeClassName="active">Projects</Link>
                 <Link to="/about"  activeClassName="active">About Alan</Link>
               </span>
             </nav>
