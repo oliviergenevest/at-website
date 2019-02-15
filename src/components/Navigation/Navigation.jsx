@@ -84,11 +84,11 @@ export default class Navigation extends Component {
               </Link>
            
              <div className={styles.mobileNavSocialMedia}>
-                <a href={config.instagramPageUrl} target="_blank" rel="noopener noreferrer">
+                <a href={config.instagramPageUrl} aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                   <FaInstagram />
                 </a>
               
-                <a href="{config.facebookPageUrl}" target="_blank" rel="noopener noreferrer">
+                <a href="{config.facebookPageUrl}" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                   <FaFacebook />
                 </a>
               </div>

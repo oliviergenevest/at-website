@@ -34,7 +34,7 @@ const IndexPage = () => (
             image = { <Img sizes={contentfulHomepage.backgroundImage.sizes} /> } 
             heroText = {{text:contentfulHomepage.title}} 
             text1= {{text:contentfulHomepage.subtitle}} 
-            text3= {{text:'Under construction'}} 
+            text3= {{text:'Website under construction'}} 
           />   
       </>
      )}
