@@ -3,9 +3,6 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql, Link, PageRenderer  } from 'gatsby'
 import Navigation from './Navigation/Navigation'
 import Container from './Container/Container'
-/*import Header from './header'*/
-
-/*import 'typeface-montserrat'*/
 import 'typeface-muli'
 import "typeface-didact-gothic"
 
@@ -15,6 +12,7 @@ import styles from './layout.module.scss'
 
 
 const Layout = ({ children }) => (
+  
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -28,7 +26,7 @@ const Layout = ({ children }) => (
     render={
     
     
-     
+    
       data => (
       <div className={styles.page}>   
 

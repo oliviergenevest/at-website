@@ -52,10 +52,13 @@ const PostTemplate = ({ data, pageContext }) => {
         ></div>
          </Container>
 
-         <Container text >
-        <span>Last update:</span> {updatedAt}
+          <Container text >
+           <span>Last update:</span> {updatedAt}
+          </Container>
+          
+        
             <PostLinks previous={previous} next={next} />
-      </Container>
+     
     
 
       </article>

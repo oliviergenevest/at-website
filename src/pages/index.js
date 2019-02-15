@@ -1,46 +1,47 @@
 import React from 'react'
 /*import { Link } from 'gatsby'*/
 import Img from 'gatsby-image'
-/*import Layout from '../components/layout'*/
+import Layout from '../components/layout'
 
 import { StaticQuery, graphql } from 'gatsby'
 import SEO from '../components/seo'
 import Grid1 from '../components/Grid/Grid1'
+     
 
-const ImageHomepageSection1 = () => (
+const IndexPage = () => (
   <StaticQuery
     query={graphql`
-      query {
-        placeholderImage: file(relativePath: { eq: "forest-homepage.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 1600) {
-              ...GatsbyImageSharpFluid
+      query  IndexPage  {
+  contentfulHomepage {
+    title
+    subtitle
+    backgroundImage {
+     
+            sizes(maxWidth: 1800) {
+              ...GatsbyContentfulSizes
             }
-          }
-        }
-      }
+          
+    }
+  }
+}
+
     `}
-    render={ data => <Img 
-    fluid={data.placeholderImage.childImageSharp.fluid} />}
-  />
-)
 
-
-
-
-const IndexPage = () => {
- 
-   return (
+    render={({contentfulHomepage}) => (
       <>
-          <SEO title="« Forest is art »" keywords={[`Alan Tod`, `forest`, `artist`, `art`]} />
+          <SEO title={contentfulHomepage.subtitle} keywords={[`Alan Tod`, `forest`, `artist`, `art`]} />
           <Grid1 
-            image = { <ImageHomepageSection1 /> } 
-            heroText = {{text:'Alan Tod'}} 
-            text1= {{text:'«Forest is Art»'}} 
+            image = { <Img sizes={contentfulHomepage.backgroundImage.sizes} /> } 
+            heroText = {{text:contentfulHomepage.title}} 
+            text1= {{text:contentfulHomepage.subtitle}} 
             text3= {{text:'Under construction'}} 
           />   
       </>
-)
-}
+     )}
+  />
+);
+
+
+
 
 export default IndexPage
