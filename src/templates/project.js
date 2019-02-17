@@ -8,7 +8,7 @@ import Img from 'gatsby-image'
 import Container from '../components/Container/Container'
 import PostLinks from '../components/PostLinks'
 import styles from './project.module.scss'
-
+/*import CustomScroll from 'react-custom-scroll'*/
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
@@ -47,21 +47,21 @@ const PostTemplate = ({ data, pageContext }) => {
    
     <div className={styles.projectContent}>
       <article>
-          <Container text ><div
-        dangerouslySetInnerHTML={{ __html: description.childMarkdownRemark.html }}
-        ></div>
+          <Container text >
+           
+              <div dangerouslySetInnerHTML={{ __html: description.childMarkdownRemark.html }}
+              ></div>
+
          </Container>
 
           <Container text >
            <span>Last update:</span> {updatedAt}
           </Container>
-          
-        
-            <PostLinks previous={previous} next={next} />
-     
-    
+
+          <PostLinks previous={previous} next={next} />
 
       </article>
+
     </div>
   </div>
      

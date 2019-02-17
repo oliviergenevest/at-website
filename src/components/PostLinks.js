@@ -4,7 +4,7 @@ import styles from './PostLinks.module.scss'
 
 
 const PostLinks = props => {
-  console.log(props.previous)
+
   return (
     <div className={styles.wrapper}>
       <div  className={styles.box}>

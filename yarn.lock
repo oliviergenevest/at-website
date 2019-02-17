@@ -9292,6 +9292,11 @@ react-burger-menu@^2.5.4:
     prop-types "^15.6.2"
     snapsvg-cjs "0.0.6"
 
+react-custom-scroll@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/react-custom-scroll/-/react-custom-scroll-4.0.1.tgz#495bb99143dc0efd09bbb59d62be0677956efeea"
+  integrity sha512-l9LcoUYYW4FLESt3+KthFBM5pcxbGqr4zpUuQkwy097UtI6e+v1o5+DJDCi01PKOidj9kHvtpyxalEuGkpz98g==
+
 react-dev-utils@^4.2.1:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-4.2.3.tgz#5b42d9ea58d5e9e017a2f57a40a8af408a3a46fb"

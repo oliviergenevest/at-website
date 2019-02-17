@@ -11,7 +11,7 @@ module.exports = {
   author:'Olivier Genevest',
    authorUrl:'https://oliviergenevest.info/contacts',
    publisher:'Olivier Genevest',
-    shareImage: '/images/gatsby-icon.png', // Open Graph Default Share Image. 1200x1200 is recommended
+    shareImage: '/images/alan-tod-icon.png', // Open Graph Default Share Image. 1200x1200 is recommended
   //siteFBAppID: '123456789', // Facebook App ID
   facebookPageUrl:'',
   instagramPageUrl:'https://www.instagram.com/alan.tod',

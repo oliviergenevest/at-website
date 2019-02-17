@@ -6,6 +6,7 @@ import Container from '../components/Container/Container'
 import SEO from '../components/seo'
 
 
+
 const About = () => (
 
   <StaticQuery

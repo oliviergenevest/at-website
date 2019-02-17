@@ -26,6 +26,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-burger-menu": "^2.5.4",
+    "react-custom-scroll": "^4.0.1",
     "react-dom": "^16.6.3",
     "react-hamburger-menu": "^1.1.1",
     "react-headroom": "^2.2.4",
