@@ -1,17 +1,19 @@
 import React from 'react'
+
 const ContactForm = () => 
 (
 	<>
 		<h2>Contact</h2>
-		<form name="contact" method="post"  data-netlify="true" data-netlify-honeypot="bot-field">
+		<form name="contact" action="/success" method="post"  data-netlify="true" data-netlify-honeypot="bot-field">
 		    <input type="hidden" name="bot-field" />
 		    <div className="field half first">
 		        <label htmlFor="name">Name</label>
-		        <input type="text" name="name" id="name" />
+		        <input placeholder="Your Name" name="name" id="name" />
+		      
 		    </div>
 		    <div className="field half">
 		        <label htmlFor="email">Email</label>
-		        <input type="text" name="email" id="email" />
+		        <input placeholder="Your Email Address"  type="text" name="email" id="email" />
 		    </div>
 		    <div className="field">
 		        <label htmlFor="message">Message</label>
