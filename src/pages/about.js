@@ -4,6 +4,7 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import Container from '../components/Container/Container'
 import SEO from '../components/seo'
+import ContactForm from '../components/ContactForm/ContactForm'
 
 
 
@@ -31,11 +32,12 @@ const About = () => (
     render={({contentfulAboutAlanPage}) => (
               <Layout>
                 <SEO title={contentfulAboutAlanPage.slug} keywords={[`alan tod`, `forest`, `art`]} />
+               
              <Img sizes={contentfulAboutAlanPage.imagePortraitAlan.sizes} style={{'marginBottom':'2rem'}}/>
              <Container text>
              <div dangerouslySetInnerHTML={{__html:contentfulAboutAlanPage.content.childMarkdownRemark.html}}></div>
                 
-                
+                 <ContactForm/>
             </Container>
               </Layout>
             )
