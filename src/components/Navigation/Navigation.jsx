@@ -122,7 +122,7 @@ export default class Navigation extends Component {
              <HamburgerMenu 
                 isOpen={this.state.menuOpen}
                 menuClicked={this.handleClick.bind(this)}
-                width={36}
+                width={3 6}
                 height={18}
                 strokeWidth={2}
                 rotate={0}
