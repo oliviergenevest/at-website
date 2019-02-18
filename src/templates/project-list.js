@@ -14,9 +14,7 @@ const ProjectListTemplate = ({ data, pageContext }) => {
   const featuredPost = posts[0].node
   const { currentPage } = pageContext
   const isFirstPage = currentPage === 1
-  const postNode = {
-      title: `Project - `,
-    }
+ 
 
   return (
     <Layout>

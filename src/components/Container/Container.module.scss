@@ -25,12 +25,19 @@
 .footer {
    padding-top: .5rem;
    padding-bottom: .5rem;
-
+ font-size:14px;
   display:flex;
-    span:first-child {
+  span:first-child {
       margin-right: auto;
     }
-    font-size:14px;
+  span:nth-child(2) a {
+    margin-right:10px;
+    font-size: 18px;
+  }
+  span:nth-child(2) {
+    display:flex;
+  }
+   
 }
 
 /*

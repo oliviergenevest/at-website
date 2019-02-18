@@ -13,13 +13,13 @@ import styles from './project.module.scss'
 const PostTemplate = ({ data, pageContext }) => {
   const {
     title,
-    slug,
+    /*slug,*/
     heroImage,
     description,
     updatedAt,
     
   } = data.contentfulProject
-  const postNode = data.contentfulProject
+ /*const postNode = data.contentfulProject*/
   const previous = pageContext.prev
   const next = pageContext.next
 

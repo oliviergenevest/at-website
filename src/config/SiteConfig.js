@@ -10,10 +10,10 @@ module.exports = {
   siteTel:'',
   author:'Olivier Genevest',
    authorUrl:'https://oliviergenevest.info/contacts',
-   publisher:'Olivier Genevest',
+   publisher:'Alan Tod',
     shareImage: '/images/alan-tod-icon.png', // Open Graph Default Share Image. 1200x1200 is recommended
   //siteFBAppID: '123456789', // Facebook App ID
-  facebookPageUrl:'',
+  facebookPageUrl:'https://www.facebook.com/julien.isore.7',
   instagramPageUrl:'https://www.instagram.com/alan.tod',
   //userTwitter: '@emma', // Twitter Username
   // og: Meta Tags

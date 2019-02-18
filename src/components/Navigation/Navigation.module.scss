@@ -145,6 +145,7 @@
  .bmBurgerButton div span {
   background: $brand-text!important;
   height:4px;
+
 }
 
 .bmBurgerButton div span:nth-child(2) {
@@ -183,7 +184,8 @@
 /* Individual item */
  .bmItem {
   display: inline-block;
-
+margin-top: 1em;
+    font-size: 1.5rem;
   color:white;
 
 }

@@ -25,7 +25,7 @@ module.exports = {
       resolve: `gatsby-source-contentful`,
       options: {
           spaceId,
-        accessToken
+          accessToken
       },
     },
     {
@@ -61,8 +61,8 @@ module.exports = {
         name: `Alan Tod - Forest is art`,
         short_name: `Alan Tod`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#fff`,
+        theme_color: `#00B050`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },

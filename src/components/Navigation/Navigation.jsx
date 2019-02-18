@@ -3,8 +3,8 @@ import Link from 'gatsby-link'
 import Headroom from 'react-headroom'
 import HamburgerMenu from 'react-hamburger-menu'
 import { slide as Menu } from 'react-burger-menu'
-import { Fade/*, Flip*/ } from 'react-reveal'
-import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa'
+/*import { Fade, Flip} from 'react-reveal'*/
+import { FaInstagram, FaFacebook /*, FaTwitter*/ } from 'react-icons/fa'
 import config from '../../config/SiteConfig'
 import styles from './Navigation.module.scss'
 import './Headroom.scss'
@@ -88,7 +88,7 @@ export default class Navigation extends Component {
                   <FaInstagram />
                 </a>
               
-                <a href="{config.facebookPageUrl}" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <a href={config.facebookPageUrl} aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                   <FaFacebook />
                 </a>
               </div>
@@ -122,7 +122,7 @@ export default class Navigation extends Component {
              <HamburgerMenu 
                 isOpen={this.state.menuOpen}
                 menuClicked={this.handleClick.bind(this)}
-                width={46}
+                width={36}
                 height={18}
                 strokeWidth={2}
                 rotate={0}
