@@ -22,7 +22,7 @@ const Grid1 = ({image, text1, heroText, text3}) => (
 		           </Fade>
 		       </div>
 		        <Fade bottom  delay={1500} distance="20px">
-		      <p className= {styles.inProgress}> [ <Link to="/research">{text3.text}</Link> ] </p>
+		      <p className= {styles.inProgress}> [ <Link to="/projects">{text3.text}</Link> ] </p>
 		       </Fade>
 			</div>
 	        <div className= {styles.image} > 

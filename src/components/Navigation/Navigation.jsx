@@ -67,18 +67,15 @@ export default class Navigation extends Component {
               <Link to="/" onClick={() => this.closeMenu()}>
                 Homepage
               </Link>
-             
-              <Link to="/research" activeClassName="active" onClick={() => this.closeMenu()}>
-                Research
-              </Link>
-            
-             
-              
+ 
               <Link to="/projects" activeClassName="active" onClick={() => this.closeMenu()}>
                 Projects
               </Link>
            
-             
+             <Link to="/research" activeClassName="active" onClick={() => this.closeMenu()}>
+                Research
+              </Link>
+              
               <Link to="/about" activeClassName="active" onClick={() => this.closeMenu()}>
                 About Alan
               </Link>
@@ -102,19 +99,15 @@ export default class Navigation extends Component {
             <div className={styles.name}>
               <span>
                 <Link to="/" >
-             
-                  
                   Alan Tod
                 </Link>
-              </span>
-           
+              </span> 
             </div>
             
             <nav className={styles.navigation}>
               <span>
-              
-                <Link to="/research"  activeClassName="active">Research</Link>
                 <Link to="/projects"  activeClassName="active">Projects</Link>
+                <Link to="/research"  activeClassName="active">Research</Link>
                 <Link to="/about"  activeClassName="active">About Alan</Link>
               </span>
             </nav>
