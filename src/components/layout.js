@@ -12,7 +12,7 @@ import styles from './layout.module.scss'
 
 
 
-const Layout = ({ children )} => (
+const Layout = ({ children } ) => (
   
   <StaticQuery
     query={graphql`
