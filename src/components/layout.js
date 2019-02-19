@@ -12,7 +12,7 @@ import styles from './layout.module.scss'
 
 
 
-const Layout = ({ children }) => (
+const Layout = ({ children )} => (
   
   <StaticQuery
     query={graphql`
@@ -44,7 +44,8 @@ const Layout = ({ children }) => (
               
                 <a href={config.facebookPageUrl} aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                   <FaFacebook />
-                </a> <span>© Alan Tod - 2019</span></span>    
+                </a> <span>© Alan Tod - 2019</span>
+              </span>    
             </Container>
           </footer>
       </div>
