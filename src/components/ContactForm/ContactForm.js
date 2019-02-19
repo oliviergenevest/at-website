@@ -1,11 +1,13 @@
 import React from 'react'
 
+
 const ContactForm = () => 
 (
 	<>
 		<h2>Contact</h2>
 		<form name="contact" action="/success" method="post"  data-netlify="true" data-netlify-honeypot="bot-field">
 		    <input type="hidden" name="bot-field" />
+		    <input type="hidden" name="form-name" value="contact" />
 		    <div className="field half first">
 		        <label htmlFor="name">Name</label>
 		        <input placeholder="Your Name" name="name" id="name" required />
@@ -24,7 +26,7 @@ const ContactForm = () =>
 		      
 		    </ul>
 		</form>
-		</>
+	</>
 )
 
 export default ContactForm
