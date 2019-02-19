@@ -34,7 +34,7 @@ const About = () => (
                 <SEO title={contentfulAboutAlanPage.slug} keywords={[`alan tod`, `forest`, `art`]} />
                
              <Img sizes={contentfulAboutAlanPage.imagePortraitAlan.sizes} style={{'marginBottom':'2rem'}}/>
-             <Container text>
+             <Container text >
              <div dangerouslySetInnerHTML={{__html:contentfulAboutAlanPage.content.childMarkdownRemark.html}}></div>
                 
                  <ContactForm/>

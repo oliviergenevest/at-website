@@ -20,7 +20,7 @@ const ProjectListTemplate = ({ data, pageContext }) => {
     <Layout>
     <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
       
-      <Container fluid>
+      <Container fluid first>
         {isFirstPage ? (
         <> 
           

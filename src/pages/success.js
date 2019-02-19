@@ -11,7 +11,7 @@ const Success = (props) => (
             <meta name="description" content="Success Page" />
         </Helmet>
 
-        <Container text>
+        <Container text first>
             
             <h1>Success</h1>
             <p>Thank you for contacting me!</p>

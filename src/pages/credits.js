@@ -8,7 +8,7 @@ const Credits = () => (
   <Layout>
     <SEO title="Credits" keywords={[`gatsby`, `application`, `react`]} />
 
- <Container text>
+ <Container text first>
     
     <h1>Credits</h1>
     

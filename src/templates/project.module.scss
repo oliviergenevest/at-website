@@ -34,9 +34,10 @@
 
 
 .projectWrapper {
-
+margin-top:2rem;
   display: grid;
-  grid-template-rows:calc(100vh - 41px - 5rem);  /* height limitation on second row */
+  /* 100 - header - footer */
+  grid-template-rows:calc(100vh - 41px - 47px - 2rem);  /* height limitation on second row */
   grid-template-columns: auto minmax(auto, 600px);
 
   grid-template-areas: "nav content";

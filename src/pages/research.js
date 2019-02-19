@@ -40,7 +40,7 @@ const Research = () => (
   <Layout>
     <SEO title="Research" keywords={[`alan tod`, `forest`, `art`, 'Research']} />
 
- <Container fluid >
+ <Container fluid first >
   <h1>Research</h1>
         <h3>
        FOREST ART, Total art, Land-art, Painting, Theory, Photography, Bio arte and Performance.</h3>
