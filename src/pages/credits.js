@@ -15,7 +15,7 @@ const Credits = () => (
     <h2>Website</h2>
     <p><a href="https://oliviergenevest.info">Olivier Genevest</a></p>
     
-    <h2>Illustration</h2>
+    <h2>Illustrations</h2>
     <p><a href="https://alantod.com">Alan Tod</a></p>
 
 </Container>

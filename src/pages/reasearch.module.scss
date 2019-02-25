@@ -1,0 +1,49 @@
+@import "../config/variables";
+
+.container {
+	display:flex;
+	
+	margin-bottom:5rem;
+	flex-direction:row;
+	
+	 @include for-tablet-landscape-down {
+	 	flex-direction:column-reverse;
+	 }
+
+}
+
+.content {
+	flex-basis:550px;
+	background-color: white;
+    padding: 2rem;
+    flex-shrink: 0;
+    align-self: flex-start;
+	 @include for-tablet-landscape-down {
+	 	margin-top:2rem;
+	 }
+	  @include for-phone-only {
+	   padding:1rem;
+	  }
+
+	 h1 {
+	 	text-align:right;
+	 }
+}
+
+.image {
+	/*flex-basis:50%;*/
+	flex-grow:1;
+	margin-left:1rem;
+	margin-top:3rem;
+	 @include for-tablet-landscape-down {
+	 	margin-left:0;
+	 }
+
+}
+
+.caption { 
+		font-size:14px;
+		text-align:right; 
+		display:block;
+		padding-right:10px;
+	}
