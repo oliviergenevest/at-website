@@ -49,20 +49,20 @@ module.exports = {
               maxWidth: 1800,
             },
           },*/
-          {
+         /* {
             resolve: `gatsby-remark-images-contentful`,
             options: {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 1800,
-              /*wrapperStyle: 'margin-bottom: 1.666rem;',*/
+             
               backgroundColor:'transparent',
               showCaptions: true,
               linkImagesToOriginal: true,
          
             },
-          },
+          },*/
         ],
 
       },
