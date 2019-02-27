@@ -1,0 +1,73 @@
+@import "../../config/variables";
+
+label{
+  display:block;
+  margin:1em 0 .2em;
+}
+/* single-line text, checkbox, and button */
+input, select, textarea{
+  display:block;
+  width:100%;
+  padding:.3em;
+  font-size:20px;
+  background-color:#fbfbfb;
+  border:solid 1px #CCC;
+  resize:vertical;
+}
+textarea{
+  min-height:180px;
+}
+select{
+  color:$brand-cta;
+}
+
+input[type=checkbox]{
+  display:inline;
+  width:auto;
+  color:red;
+}
+
+input[type=submit]{
+  background:$brand-cta;
+  margin:1em 0 0;
+  color:white;
+  /*border:none;*/
+  border-radius:8px;
+  transition:all .3s ease-out;
+}
+
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+textarea:focus,
+textarea:hover{
+ /* background: lighten($brand-cta-bg,65%);*/
+border:solid 1px $brand-cta-bg;
+}
+
+/* hover and focus states */
+input[type=submit]:hover,
+input[type=submit]:focus{
+  background: $brand-cta-bg;
+  outline:none;
+  cursor:hand;
+}
+
+form {
+  margin-bottom:5rem;
+}
+
+@media screen and (min-width:600px) {
+  /*  make the form 2 columns */
+  form {
+    display:flex;
+   justify-content: space-between;
+   background-color: white;
+    padding: 1em;
+  }
+  .column{
+    width:48%;
+    
+  }
+}
