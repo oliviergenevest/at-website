@@ -21,8 +21,8 @@ const About = () => (
           }
         }
         imagePortraitAlan {
-                sizes(maxWidth: 1600) {
-                  ...GatsbyContentfulSizes
+                fluid(maxWidth: 1600) {
+                  ...GatsbyContentfulFluid_withWebp
                 }     
         }
       }
@@ -33,7 +33,7 @@ const About = () => (
               <Layout>
                 <SEO title={contentfulAboutAlanPage.slug} keywords={[`alan tod`, `forest`, `art`]} />
                
-             <Img sizes={contentfulAboutAlanPage.imagePortraitAlan.sizes} style={{'marginBottom':'2rem'}}/>
+             <Img fluid={contentfulAboutAlanPage.imagePortraitAlan.fluid} style={{'marginBottom':'2rem'}}/>
              <Container text >
              <div dangerouslySetInnerHTML={{__html:contentfulAboutAlanPage.content.childMarkdownRemark.html}}></div>
                 

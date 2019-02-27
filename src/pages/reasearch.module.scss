@@ -2,12 +2,13 @@
 
 .container {
 	display:flex;
-	
+	margin-top:3rem;
 	margin-bottom:5rem;
 	flex-direction:row;
 	
 	 @include for-tablet-landscape-down {
 	 	flex-direction:column-reverse;
+	 	margin-top:0;
 	 }
 
 }

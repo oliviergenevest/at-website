@@ -19,8 +19,8 @@ const Research = () => (
           }
         }
         imageResearch {
-                sizes(maxWidth: 1200) {
-                  ...GatsbyContentfulSizes
+                fluid(maxWidth: 1200) {
+                  ...GatsbyContentfulFluid_withWebp
                 }  
                 description   
         }
@@ -31,24 +31,26 @@ const Research = () => (
     render={  ({contentfulResearchPage})  =>
     <Layout>
       <SEO title="Research" keywords={[`alan tod`, `forest`, `art`, 'Research']} />
-       <Container fluid  first>
+    
        
               
          <div className={styles.container} >
-          <Fade bottom distance="20px">
-           <div 
-            className={styles.content}
-            dangerouslySetInnerHTML={{__html:contentfulResearchPage.content.childMarkdownRemark.html}}>
-           </div>
-          </Fade>
+          
+             <Fade bottom distance="20px">
+               <div 
+                className={styles.content}
+                dangerouslySetInnerHTML={{__html:contentfulResearchPage.content.childMarkdownRemark.html}}>
+               </div>
+              </Fade>
+          
           <div className={styles.image}>
             <Fade top distance="20px">
-            <Img sizes={contentfulResearchPage.imageResearch.sizes} />
+            <Img fluid={contentfulResearchPage.imageResearch.fluid} alt={contentfulResearchPage.imageResearch.description}/>
             <span className={styles.caption}>{contentfulResearchPage.imageResearch.description}</span>
             </Fade>
           </div>
         </div>
-      </Container>
+      
   </Layout>
    }
   />

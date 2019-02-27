@@ -65,8 +65,8 @@ export const query = graphql`
           updatedAt(formatString: "MMMM DD, YYYY")
           heroImage {
             title
-            fluid(maxWidth: 1800) {
-              ...GatsbyContentfulFluid_withWebp_noBase64
+            fluid(maxWidth: 800) {
+              ...GatsbyContentfulFluid_withWebp
             }
           }
           description {
