@@ -21,7 +21,7 @@ $transition-headroom: all 0.35s ease-in-out;
   z-index: 1200; 
 
   a {
-      text-transform:uppercase;
+      /*text-transform:uppercase;*/
      /* font-weight:700;*/
       font-size: inherit;
       color:$brand-text;
@@ -121,7 +121,7 @@ header {
   outline: none;
 
   text-decoration: none;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-size: inherit;
   padding-left:0.8rem;
 }

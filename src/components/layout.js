@@ -4,8 +4,8 @@ import { StaticQuery, graphql, Link/*, PageRenderer*/  } from 'gatsby'
 import Navigation from './Navigation/Navigation'
 import Container from './Container/Container'
 import config from '../config/SiteConfig'
-import 'typeface-muli'
-import "typeface-didact-gothic"
+/*import 'typeface-muli'*/
+import 'typeface-didact-gothic'
 import { FaInstagram, FaFacebook /*, FaTwitter*/ } from 'react-icons/fa'
 import styles from './layout.module.scss'
 /*import AudioPlayer from '../components/Player/player'*/

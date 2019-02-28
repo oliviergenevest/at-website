@@ -5,7 +5,11 @@
     height:calc(100vh);
     grid-template-rows: 1fr;
     grid-template-columns: 1fr ;
-   
+   h1, h2, p {
+		font-family: 'Didact Gothic',sans-serif;
+		font-weight:400;
+		color:white;
+   }
     /*@include for-tablet-landscape-down {
 		 height:auto;
 	}*/
@@ -31,7 +35,8 @@
 	    bottom: 0;
 	    left: 0;
 	    background-color: $brand-cta;
-	    background-color: #607d01;
+	    /*background-color: #607d01; vert foncé */
+	    background-color: #373a47;
 	    opacity: .25;
 	    z-index:1;
 	}
@@ -50,8 +55,8 @@
 	
 	
   h2 {
-  	font-weight:800;
-  	color:white;
+
+  	
   	    font-size: 3.8rem;
   	 @include for-tablet-landscape-down {
 		 font-size: 3rem;
@@ -63,9 +68,9 @@
 	
 	z-index:1;
 	.title {
-		color: white;
+		/*color: white;*/
 	    font-size: 3.8rem;
-	    font-weight:800;
+	   /* font-weight:800;*/
 	 	text-transform: capitalize;
 	    @include for-tablet-landscape-down {
 		 font-size: 3rem;
@@ -75,8 +80,10 @@
 
 .inProgress {
 	color:white;
+	padding:.3em;
 	background-color:$brand-cta;
-	a {
+	a, a:hover {
 		color:white;
 	}
+	
 }

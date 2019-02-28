@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  WEB Drôme website using gatsby-js 
+Alan Tod website using gatsby-js 
 </h1>
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
@@ -92,6 +92,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ef2daf89-698b-4ff7-99c1-460456c57c39/deploy-status)](https://app.netlify.com/sites/atwebsite/deploys)
 
 <!-- AUTO-GENERATED-CONTENT:END -->

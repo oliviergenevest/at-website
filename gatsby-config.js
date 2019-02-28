@@ -49,7 +49,7 @@ module.exports = {
               maxWidth: 1800,
             },
           },*/
-         /* {
+          {
             resolve: `gatsby-remark-images-contentful`,
             options: {
               // It's important to specify the maxWidth (in pixels) of
@@ -62,7 +62,7 @@ module.exports = {
               linkImagesToOriginal: true,
          
             },
-          },*/
+          },
         ],
 
       },

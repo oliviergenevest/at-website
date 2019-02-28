@@ -8,12 +8,12 @@ const typography = new Typography( {
  
   baseFontSize: "18px",
   baseLineHeight: 1.666,
-  headerFontFamily: ["Muli","sans-serif"],
+  headerFontFamily: ["Didact Gothic","sans-serif"],
   bodyFontFamily: ["Didact Gothic", "sans-serif"],
 overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
   h1: {
-    fontFamily: ['Muli', 'sans-serif'].join(','),
-   textTransform:'uppercase',
+    fontFamily: ['Didact Gothic', 'sans-serif'].join(','),
+  /* textTransform:'uppercase',*/
   // fontWeight:700,
   fontSize:rhythm(1),
   

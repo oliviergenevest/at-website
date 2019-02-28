@@ -46,6 +46,7 @@
     "react-typography": "^0.16.18",
     "typeface-didact-gothic": "^0.0.54",
     "typeface-muli": "^0.0.71",
+    "typeface-nunito": "^0.0.54",
     "typography": "^0.16.18",
     "typography-breakpoint-constants": "^0.16.18"
   },

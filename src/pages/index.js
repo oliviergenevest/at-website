@@ -2,8 +2,8 @@ import React from 'react'
 /*import { Link } from 'gatsby'*/
 import Img from 'gatsby-image'
 /*import Layout from '../components/layout'*/
-import 'typeface-muli'
-import "typeface-didact-gothic"
+/*import 'typeface-muli'*/
+import 'typeface-didact-gothic'
 import { StaticQuery, graphql } from 'gatsby'
 import SEO from '../components/seo'
 import Grid1 from '../components/Grid/Grid1'
