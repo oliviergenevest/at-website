@@ -82,7 +82,7 @@ export const query = graphql`
       heroImage {
         title
         fluid(maxWidth: 1800) {
-          ...GatsbyContentfulFluid_withWebp
+          ...GatsbyContentfulFluid
         }
         ogimg: resize(width: 1200) {
           src
