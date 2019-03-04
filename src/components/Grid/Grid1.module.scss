@@ -8,7 +8,7 @@
    h1, h2, p {
 		font-family: 'Didact Gothic',sans-serif;
 		font-weight:400;
-		color:white;
+		
    }
     /*@include for-tablet-landscape-down {
 		 height:auto;
@@ -56,7 +56,7 @@
 	
   h2 {
 
-  	
+  	color:white;
   	    font-size: 3.8rem;
   	 @include for-tablet-landscape-down {
 		 font-size: 3rem;
@@ -68,7 +68,7 @@
 	
 	z-index:1;
 	.title {
-		/*color: white;*/
+		color: white;
 	    font-size: 3.8rem;
 	   /* font-weight:800;*/
 	 	text-transform: capitalize;
@@ -79,11 +79,11 @@
 }
 
 .inProgress {
-	color:white;
+	color:$brand-text;
 	padding:.3em;
 	background-color:$brand-cta;
 	a, a:hover {
-		color:white;
+		color:$brand-text;
 	}
 	
 }
