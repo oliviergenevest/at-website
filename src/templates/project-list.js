@@ -53,6 +53,7 @@ const ProjectListTemplate = ({ data, pageContext }) => {
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
     allContentfulProject(
+      filter: {node_locale: {regex: "/en-US/"}}
       sort: { fields: [updatedAt], order: DESC }
       limit: $limit
       skip: $skip

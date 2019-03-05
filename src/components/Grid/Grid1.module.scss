@@ -55,11 +55,11 @@
 	
 	
   h2 {
-
+  	font-style:italic;
   	color:white;
-  	    font-size: 3.8rem;
+  	    font-size: 2.8rem;
   	 @include for-tablet-landscape-down {
-		 font-size: 3rem;
+		 font-size: 2rem;
 	}
   }
 }
