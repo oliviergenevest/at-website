@@ -9,13 +9,13 @@ const PostLinks = props => {
     <div className={styles.wrapper}>
       <div  className={styles.box}>
         {props.previous && (
-          <Link to={`/project/${props.previous.slug}/`}  className={styles.previousLink}>
+          <Link to={`/project/${props.previous.slug}/`}  className={styles.previousLink}  rel="prev">
             &#8592; Previous project 
             <span className={styles.navProjectName}>{props.previous.title}</span>
           </Link>
         )}
         {props.next && (
-          <Link to={`/project/${props.next.slug}/`}  className={styles.nextLink}>Next project &#8594;
+          <Link to={`/project/${props.next.slug}/`}  className={styles.nextLink} rel="next">Next project &#8594;
            <span className={styles.navProjectName}>{props.next.title}</span>
           </Link>
         )}

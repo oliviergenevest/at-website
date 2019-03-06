@@ -12,6 +12,7 @@ exports.createPages = ({ graphql, actions }) => {
     graphql(`
       {
         allContentfulProject(
+        filter: {node_locale: {regex: "/en-US/"}}
           sort: { fields: [updatedAt], order: DESC }
           limit: 10000
         ) {

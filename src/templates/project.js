@@ -73,7 +73,10 @@ const PostTemplate = ({ data, pageContext }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    contentfulProject(slug: { eq: $slug }) {
+    contentfulProject(
+    slug: { eq: $slug }
+
+    ) {
       title
       slug
       updatedAt(formatString: "MMMM DD, YYYY")
@@ -82,7 +85,7 @@ export const query = graphql`
       heroImage {
         title
         fluid(maxWidth: 1800) {
-          ...GatsbyContentfulFluid
+          ...GatsbyContentfulFluid_withWebp
         }
         ogimg: resize(width: 1200) {
           src
