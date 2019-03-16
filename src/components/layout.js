@@ -4,16 +4,27 @@ import { StaticQuery, graphql, Link/*, PageRenderer*/  } from 'gatsby'
 import Navigation from './Navigation/Navigation'
 import Container from './Container/Container'
 import config from '../config/SiteConfig'
-/*import 'typeface-muli'*/
+
 import 'typeface-didact-gothic'
 import { FaInstagram, FaFacebook /*, FaTwitter*/ } from 'react-icons/fa'
 import styles from './layout.module.scss'
-/*import AudioPlayer from '../components/Player/player'*/
+import { IntlProvider, addLocaleData } from 'react-intl'
 
+// Locale data
+import enData from 'react-intl/locale-data/en'
+import frData from 'react-intl/locale-data/fr'
 
+// Messages
 
-const Layout = ({ children } ) => (
-  
+/*import en from '../i18n/en.json'
+import fr from '../i18n/fr.json'
+
+const messages = { en, fr }*/
+
+addLocaleData([...enData, ...frData])
+
+const Layout = ({ children, locale } ) => (
+ 
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -29,9 +40,11 @@ const Layout = ({ children } ) => (
     
     
       data => (
-      <div className={styles.page}>   
 
-        <Navigation/>
+      <IntlProvider locale={locale} >
+      <div className={styles.page}>   
+ 
+        <Navigation/>locale : {locale}
         <main className={styles.content} >
           {children} 
         </main>      
@@ -49,6 +62,7 @@ const Layout = ({ children } ) => (
             </Container>
           </footer>
       </div>
+       </IntlProvider>
     )}
   />
 )

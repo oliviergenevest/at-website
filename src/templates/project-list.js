@@ -12,12 +12,12 @@ import SEO from '../components/seo'
 const ProjectListTemplate = ({ data, pageContext }) => {
   const posts = data.allContentfulProject.edges
   const featuredPost = posts[0].node
-  const { currentPage } = pageContext
+  const { currentPage, locale } = pageContext
   const isFirstPage = currentPage === 1
- 
+
 
   return (
-    <Layout>
+    <Layout locale={pageContext.locale}>
     <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
       
       <Container fluid first>
@@ -28,7 +28,7 @@ const ProjectListTemplate = ({ data, pageContext }) => {
              
           <CardList>
            
-            <Card {...featuredPost} featured />
+            <Card locale={pageContext.locale} {...featuredPost} featured />
             {posts.slice(1).map(({ node: post }) => (
               <Card key={post.id} {...post} />
             ))} 
@@ -51,9 +51,9 @@ const ProjectListTemplate = ({ data, pageContext }) => {
 }
 
 export const query = graphql`
-  query($skip: Int!, $limit: Int!) {
+  query($skip: Int!, $limit: Int!, $locale: String!) {
     allContentfulProject(
-      filter: {node_locale: {regex: "/en-US/"}}
+      filter: {node_locale: {eq: $locale }}
       sort: { fields: [updatedAt], order: DESC }
       limit: $limit
       skip: $skip

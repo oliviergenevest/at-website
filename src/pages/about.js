@@ -37,7 +37,7 @@ const About = () => (
              <Container text >
              <div dangerouslySetInnerHTML={{__html:contentfulAboutAlanPage.content.childMarkdownRemark.html}}></div>
                 
-                 <ContactForm/>
+              <ContactForm/>
             </Container>
               </Layout>
             )

@@ -72,16 +72,16 @@ const PostTemplate = ({ data, pageContext }) => {
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String!, $locale: String!) {
     contentfulProject(
     slug: { eq: $slug }
-
+    node_locale: {eq: $locale }
     ) {
       title
       slug
       updatedAt(formatString: "MMMM DD, YYYY")
       updatedAtISO: updatedAt(formatString: "YYYY-MM-DD")
-     
+   
       heroImage {
         title
         fluid(maxWidth: 1800) {

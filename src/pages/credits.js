@@ -1,25 +1,74 @@
 import React from 'react'
 /*import { Link } from 'gatsby'*/
+import { StaticQuery, graphql  } from 'gatsby'
+import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import Container from '../components/Container/Container'
 import SEO from '../components/seo'
+
 	
-const Credits = () => (
-  <Layout>
-    <SEO title="Credits" keywords={[`gatsby`, `application`, `react`]} />
+const Credits = ({pageContext}) => (
+  <StaticQuery
+    query={graphql`
+      query  CreditPage  {
+      allContentfulCredits(
+		filter: {node_locale: {regex: "/fr/"}}
+      ) {
+	    edges {
+	      node {
+	        slug
+		    content {
+		        childContentfulRichText {
+		          html
+		        }
+		    }
+		    illustrations  {
+		        fluid(maxWidth: 1800) {
+		          ...GatsbyContentfulFluid_withWebp
+		        }
+		        description
+		    }
+	       
+	        
+	      }
+	    }
+	  }
+    }
+  `}
 
- <Container text first>
+    render={({allContentfulCredits}) => (
     
-    <h1>Credits</h1>
-    
-    <h2>Website</h2>
-    <p><a href="https://oliviergenevest.info">Olivier Genevest</a></p>
-    
-    <h2>Illustrations</h2>
-    <p><a href="https://alantod.com">Alan Tod</a></p>
+              <Layout locale={pageContext.locale}>
+                <SEO title={allContentfulCredits.edges[0].node.slug} keywords={[`alan tod`, `forest`, `art`]} />
+               
+             
+              <Container text first>
+             <p>Langue : {pageContext.locale}</p>
+             <div dangerouslySetInnerHTML={{__html:allContentfulCredits.edges[0].node.content.childContentfulRichText.html}}></div>
+                
+                 
 
-</Container>
-  </Layout>
+			{	
+			 allContentfulCredits.edges[0].node.illustrations.map( (video , index) => (
+			             <div key={index}>
+			             <Img  fluid={video.fluid}/>
+			             <figcaption>{video.description}</figcaption>
+			             </div>
+			      )
+			 )
+         	} 
+
+            </Container>
+
+            
+           
+            
+              </Layout>
+            )
+  }
+/>
+
+
 )
 
 export default Credits

@@ -5,8 +5,12 @@ if (process.env.ENVIRONMENT !== "production") {
 }
  
 const { spaceId, accessToken } = process.env;
+const { BLOCKS, MARKS, INLINES } = require('@contentful/rich-text-types')
+
+
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://alantod.com`,
     title: `Alan Tod`,
     description: `Forest is art`,
     author: `Alan Tod`,
@@ -67,6 +71,26 @@ module.exports = {
 
       },
     },
+    {
+      resolve: '@contentful/gatsby-transformer-contentful-richtext',
+      options: {
+        renderOptions: {
+          /*
+           * Defines custom html string for each node type like heading, embedded entries etc..
+           */
+          renderNode: {
+            // Example
+            [BLOCKS.EMBEDDED_ASSET]: node => {
+              return `<figure><img class='img-fluid' src="${
+                node.data.target.fields.file['en-US'].url
+              }"/>  <figcaption>${
+                node.data.target.fields.description['en-US']
+              }</figcaption></figure>`
+            },
+          },
+         },
+      },
+    },
     `gatsby-plugin-catch-links`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -82,6 +106,7 @@ module.exports = {
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
      'gatsby-plugin-offline',

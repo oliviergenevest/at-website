@@ -28,4 +28,17 @@ module.exports = {
   themeColor: '#4a4a4a',
   backgroundColor: '#7F868A',
    
+
+  locales: {
+    en: {
+      path: 'en',
+      locale: 'English',
+      default: true
+    },
+    fr: {
+      path: 'fr',
+      locale: 'Français'
+    }
+  },
+
 };
