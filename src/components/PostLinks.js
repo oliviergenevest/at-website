@@ -1,7 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import styles from './PostLinks.module.scss'
-
+import LocalizedLink from './LocalizedLink/LocalizedLink'
 
 const PostLinks = props => {
 
@@ -9,15 +8,15 @@ const PostLinks = props => {
     <div className={styles.wrapper}>
       <div  className={styles.box}>
         {props.previous && (
-          <Link to={`/project/${props.previous.slug}/`}  className={styles.previousLink}  rel="prev">
+          <LocalizedLink to={`/project/${props.previous.slug}/`}  className={styles.previousLink}  rel="prev">
             &#8592; Previous project 
             <span className={styles.navProjectName}>{props.previous.title}</span>
-          </Link>
+          </LocalizedLink>
         )}
         {props.next && (
-          <Link to={`/project/${props.next.slug}/`}  className={styles.nextLink} rel="next">Next project &#8594;
+          <LocalizedLink to={`/project/${props.next.slug}/`}  className={styles.nextLink} rel="next">Next project &#8594;
            <span className={styles.navProjectName}>{props.next.title}</span>
-          </Link>
+          </LocalizedLink>
         )}
       </div>
     </div>

@@ -57,8 +57,10 @@ const Layout = ({ children, locale, location } ) => (
                   const newLocationFR = (location.pathname.substring(0,4) === "/fr/") ? location.pathname : '/fr/'+location.pathname.substring(1) 
                   const newLocationEN =  (location.pathname.substring(0,4) === "/fr/") ? location.pathname.substring(3) : location.pathname 
                 return(  <>
-                  <Link to={newLocationFR}  activeClassName="active">FR </Link> | 
-                  <Link to={newLocationEN} activeClassName="active">EN</Link>
+                  <Link to={newLocationFR}  activeClassName="active">FR</Link>  
+                  <Link to={newLocationEN} activeClassName="active" 
+                  style={{'marginLeft': '10px'}}
+                  >EN</Link>
                   </>
                   )
                 }}

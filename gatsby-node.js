@@ -46,7 +46,7 @@ exports.createPages = ({ graphql, actions }) => {
     graphql(`
       {
         allContentfulProject(
-          sort: { fields: [updatedAt], order: DESC }
+          sort: { fields: [node_locale,updatedAt], order: DESC }
           limit: 1000
         ) {
           edges {
@@ -63,8 +63,8 @@ exports.createPages = ({ graphql, actions }) => {
     `).then(result => {
       console.log(result)
       const projects = result.data.allContentfulProject.edges
-      const projectsPerFirstPage = /*config.projectsPerHomePage*/ 10
-      const projectsPerPage = /*config.projectsPerPage*/ 10
+      const projectsPerFirstPage = /*config.projectsPerHomePage*/ 20
+      const projectsPerPage = /*config.projectsPerPage*/ 20
       const numPages = Math.ceil(
 
         projects.slice(projectsPerFirstPage).length / projectsPerPage
@@ -110,36 +110,43 @@ exports.createPages = ({ graphql, actions }) => {
             })
 
    })
+      
+      // Create each individual project for both language (english & french)
+      projectsFR = projects.slice(0,projects.length/2)
+      projectsEN = projects.slice(projects.length/2)
 
-
-
-
-      // Create each individual project
-      projects.forEach((edge, i) => {
-        const prev = i === 0 ? null : projects[i - 1].node
-        const next = i === projects.length - 1 ? null : projects[i + 1].node
-        //console.log('project detail createPages createPage : ' + `${edge.node.slug}/`)
-        
-
-        Object.keys(locales).map(lang => {
-          const localizedPath = locales[lang].default
-            ? ""
-            : locales[lang].path   
-            createPage({
-              path: `${localizedPath}/project/${edge.node.slug}/`,
+      projectsFR.forEach((edge, i) => {
+        const next = i === 0 ? null : projectsFR[i - 1].node
+        const prev = i === projectsFR.length - 1 ? null : projectsFR[i + 1].node
+        createPage({
+              path: `${edge.node.node_locale}/project/${edge.node.slug}/`,
               component: path.resolve(`./src/templates/project.js`),
               context: {
-               locale: locales[lang].path,
+               /*locale: locales[lang].path,*/
+               locale: edge.node.node_locale,
                 slug: edge.node.slug,
                 prev,
                 next,
-              
               },
             })
-        })
-
-
       })
+
+      projectsEN.forEach((edge, i) => {
+        const next = i === 0 ? null : projectsEN[i - 1].node
+        const prev = i === projectsEN.length - 1 ? null : projectsEN[i + 1].node
+        createPage({
+              path: `/project/${edge.node.slug}/`,
+              component: path.resolve(`./src/templates/project.js`),
+              context: {
+               /*locale: locales[lang].path,*/
+               locale: edge.node.node_locale,
+                slug: edge.node.slug,
+                prev,
+                next,
+              },
+            })
+      })
+
       resolve()
     })
   })
