@@ -8,7 +8,7 @@ import Img from 'gatsby-image'
 import Container from '../components/Container/Container'
 import PostLinks from '../components/PostLinks'
 import styles from './project.module.scss'
-/*import CustomScroll from 'react-custom-scroll'*/
+import LocalizedLink from '../components/LocalizedLink/LocalizedLink'
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
@@ -24,14 +24,14 @@ const PostTemplate = ({ data, pageContext }) => {
   const next = pageContext.next
 
   return (
-    <Layout>
+    <Layout locale={pageContext.locale}>
     
        <SEO title={title} keywords={[`alan tod`, `alan tod`, `react`]} />
    
    <div className={styles.projectWrapper}>
     <div className={styles.projectSideColumnFixed}>
       <div className={styles.header}> 
-        <Link to='/projects' className={styles.backLink}>  &#8592; <span>Back</span></Link>
+        <LocalizedLink to='/projects' className={styles.backLink}>  &#8592; <span>Back</span></LocalizedLink>
         <h1> {title}</h1>
       </div>
       <div className={styles.heroImg}>

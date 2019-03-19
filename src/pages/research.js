@@ -7,11 +7,31 @@ import SEO from '../components/seo'
 import { Fade } from "react-reveal"
 import styles from './reasearch.module.scss'
 
-const Research = () => (
-  <StaticQuery
-    query={graphql`
-      query  ResearchPage  {
-      contentfulResearchPage {
+export default ({pageContext, data}) => {
+    return (
+       <Layout locale={pageContext.locale}>
+        <SEO title="Research" keywords={[`alan tod`, `forest`, `art`, 'Research']} />  
+        <div className={styles.container} >   
+          <Fade bottom distance="20px">
+             <div 
+              className={styles.content}
+              dangerouslySetInnerHTML={{__html:data.contentfulResearchPage.content.childMarkdownRemark.html}}>
+             </div>
+          </Fade>
+        <div className={styles.image}>
+          <Fade top distance="20px">
+            <Img fluid={data.contentfulResearchPage.imageResearch.fluid} alt={data.contentfulResearchPage.imageResearch.description}/>
+            <span className={styles.caption}>{data.contentfulResearchPage.imageResearch.description}</span>
+          </Fade>
+          </div>
+        </div>     
+      </Layout> 
+  )
+}
+
+export const pageQuery = graphql`
+    query  ResearchPage ($locale: String!) {
+      contentfulResearchPage (node_locale: {eq: $locale }) {
         slug
         content {
           childMarkdownRemark {
@@ -26,35 +46,4 @@ const Research = () => (
         }
       }
     }
-    
-    `}
-    render={  ({contentfulResearchPage})  =>
-    <Layout>
-      <SEO title="Research" keywords={[`alan tod`, `forest`, `art`, 'Research']} />
-    
-       
-              
-         <div className={styles.container} >
-          
-             <Fade bottom distance="20px">
-               <div 
-                className={styles.content}
-                dangerouslySetInnerHTML={{__html:contentfulResearchPage.content.childMarkdownRemark.html}}>
-               </div>
-              </Fade>
-          
-          <div className={styles.image}>
-            <Fade top distance="20px">
-            <Img fluid={contentfulResearchPage.imageResearch.fluid} alt={contentfulResearchPage.imageResearch.description}/>
-            <span className={styles.caption}>{contentfulResearchPage.imageResearch.description}</span>
-            </Fade>
-          </div>
-        </div>
-      
-  </Layout>
-   }
-  />
-)
-
-
-export default Research
+`

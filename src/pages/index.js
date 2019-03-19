@@ -1,15 +1,20 @@
 import React from 'react'
-/*import { Link } from 'gatsby'*/
 import Img from 'gatsby-image'
-/*import Layout from '../components/layout'*/
-/*import 'typeface-muli'*/
+import config from '../config/SiteConfig'
 import 'typeface-didact-gothic'
 import { StaticQuery, graphql } from 'gatsby'
 import SEO from '../components/seo'
 import Grid1 from '../components/Grid/Grid1'
-     
+ 
+// languages
+import { IntlProvider, addLocaleData } from 'react-intl'
+// Locale data
+import enData from 'react-intl/locale-data/en'
+import frData from 'react-intl/locale-data/fr'     
 
-const IndexPage = () => (
+addLocaleData([...enData, ...frData])
+
+const IndexPage = ({ pageContext } ) => (
   <StaticQuery
     query={graphql`
       query  IndexPage  {
@@ -29,15 +34,17 @@ const IndexPage = () => (
     `}
 
     render={({contentfulHomepage}) => (
-      <>
-          <SEO title={contentfulHomepage.subtitle} keywords={[`Alan Tod`, `forest`, `artist`, `art`]} />
-          <Grid1 
-            image = { <Img fluid={contentfulHomepage.backgroundImage.fluid} /> } 
-            heroText = {{text:contentfulHomepage.title}} 
-            text1= {{text:contentfulHomepage.subtitle}} 
-            text3= {{text:'Website under construction'}} 
-          />   
-      </>
+       <IntlProvider locale={pageContext.locale} >
+          <>
+            <SEO title={contentfulHomepage.subtitle} keywords={[`Alan Tod`, `forest`, `artist`, `art`]} />
+            <Grid1 
+              image = { <Img fluid={contentfulHomepage.backgroundImage.fluid} /> } 
+              heroText = {{text:contentfulHomepage.title}} 
+              text1= {{text:contentfulHomepage.subtitle}} 
+              text3= {{text:'Website under construction'}} 
+            /> 
+          </>  
+      </IntlProvider>
      )}
   />
 );

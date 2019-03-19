@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { Fade } from "react-reveal"
 import styles from './Grid1.module.scss'
-
+import LocalizedLink from '../LocalizedLink/LocalizedLink'
 
 /* <p className= {styles.inProgress}> [ <Link to="/research">{text3.text}</Link> ] </p>*/
 
@@ -22,7 +21,7 @@ const Grid1 = ({image, text1, heroText, text3}) => (
 		           </Fade>
 		       </div>
 		        <Fade bottom  delay={1500} distance="20px">
-		      <p className= {styles.inProgress}> [ <Link to="/projects">{text3.text}</Link> ] </p>
+		      <p className= {styles.inProgress}> [ <LocalizedLink to="/projects">{text3.text}</LocalizedLink> ] </p>
 		       </Fade>
 			</div>
 	        <div className= {styles.image} > 

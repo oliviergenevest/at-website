@@ -7,10 +7,10 @@
  /* => load locales from main config file */
 const config = require ('./src/config/SiteConfig.js')
 const locales = config.locales
-
+ 
 const path = require('path')
 
-
+ 
 exports.onCreatePage = async ({ page, actions }) => {
   
   const { createPage, deletePage } = actions
