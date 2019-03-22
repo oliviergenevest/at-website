@@ -14,6 +14,8 @@ import frData from 'react-intl/locale-data/fr'
 
 addLocaleData([...enData, ...frData])
 
+
+
 const IndexPage = ({ pageContext } ) => (
   <StaticQuery
     query={graphql`

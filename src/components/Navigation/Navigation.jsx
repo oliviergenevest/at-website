@@ -8,6 +8,7 @@ import config from '../../config/SiteConfig'
 import styles from './Navigation.module.scss'
 import './Headroom.scss'
 import LocalizedLink from '../LocalizedLink/LocalizedLink'
+import { FormattedMessage } from 'react-intl'
 
 export default class Navigation extends Component {
   constructor(props) {
@@ -65,19 +66,19 @@ export default class Navigation extends Component {
             >
 
               <LocalizedLink to="/" onClick={() => this.closeMenu()}>
-                Homepage
+                <FormattedMessage id="homepage" />
               </LocalizedLink>
  
               <LocalizedLink to="/projects" activeClassName="active" onClick={() => this.closeMenu()}>
-                Projects
+                <FormattedMessage id="projects" />
               </LocalizedLink>
            
              <LocalizedLink to="/research" activeClassName="active" onClick={() => this.closeMenu()}>
-                Research
+                <FormattedMessage id="research" />
               </LocalizedLink>
               
               <LocalizedLink to="/about" activeClassName="active" onClick={() => this.closeMenu()}>
-                About Alan
+                <FormattedMessage id="about alan" />
               </LocalizedLink>
            
              <div className={styles.mobileNavSocialMedia}>
@@ -106,9 +107,10 @@ export default class Navigation extends Component {
             
             <nav className={styles.navigation}>
               <span>
-                <LocalizedLink to="/projects"  activeClassName="active">Projects</LocalizedLink>
-                <LocalizedLink to="/research"  activeClassName="active">Research</LocalizedLink>
-                <LocalizedLink to="/about"  activeClassName="active">About Alan</LocalizedLink>
+                <LocalizedLink to="/projects"  activeClassName="active"> <FormattedMessage id="projects" /></LocalizedLink>
+                <LocalizedLink to="/research"  activeClassName="active">
+                 <FormattedMessage id="research" /></LocalizedLink>
+                <LocalizedLink to="/about"  activeClassName="active"> <FormattedMessage id="about alan" /></LocalizedLink>
                
               </span>
             </nav>

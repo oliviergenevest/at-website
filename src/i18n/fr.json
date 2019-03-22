@@ -1,0 +1,14 @@
+{
+  "homepage": "Accueil",
+  "projects": "Projets",
+  "research": "Recherche",
+  "about alan": "A propos",
+  "prev": "Précédent",
+  "next": "Suivant",
+  "credits": "Crédits",
+  "name": "Nom",
+  "placeholder_name": "Votre nom",
+  "email": "E-mail",
+  "placeholder_email":"Votre adresse e-mail",
+  "send" : "Envoyer"
+}

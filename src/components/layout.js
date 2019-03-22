@@ -13,13 +13,13 @@ import LocalizedLink from '../components/LocalizedLink/LocalizedLink'
 // Locale data
 import enData from 'react-intl/locale-data/en'
 import frData from 'react-intl/locale-data/fr'
-
+import { FormattedMessage } from 'react-intl'
 // Messages
 
-/*import en from '../i18n/en.json'
+import en from '../i18n/en.json'
 import fr from '../i18n/fr.json'
 
-const messages = { en, fr }*/
+const messages = { en, fr }
 
 addLocaleData([...enData, ...frData])
 
@@ -40,7 +40,7 @@ const Layout = ({ children, locale, location } ) => (
     
       data => (
 
-      <IntlProvider locale={locale} >
+      <IntlProvider locale={locale}  messages={messages[locale]} >
       <div className={styles.page}>   
  
         <Navigation />
@@ -72,7 +72,7 @@ const Layout = ({ children, locale, location } ) => (
               
                 <a href={config.facebookPageUrl} aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                   <FaFacebook />
-                </a> <span>© Alan Tod - 2019 -  <LocalizedLink to="/credits">Credits</LocalizedLink>  </span>
+                </a> <span>© Alan Tod - 2019 -  <LocalizedLink to="/credits"> <FormattedMessage id="credits" /></LocalizedLink>  </span>
               </span>    
             </Container>
           </footer>
