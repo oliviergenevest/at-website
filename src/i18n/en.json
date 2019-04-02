@@ -10,6 +10,8 @@
   "placeholder_name": "Your name",
   "email": "Email",
   "placeholder_email":"Your Email Address",
-  "send" : "Send message"
+  "send" : "Send message",
+  "cta_portfolio_on_demand":"Portfolio available on ",
+  "cta_portfolio_on_demand_link":"demand"
 
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, Link} from 'gatsby'
-
+import { FormattedMessage } from 'react-intl'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -51,6 +51,9 @@ const PostTemplate = ({ data, pageContext }) => {
            
               <div dangerouslySetInnerHTML={{ __html: description.childMarkdownRemark.html }}
               ></div>
+             <p> <FormattedMessage id="cta_portfolio_on_demand"/>
+              <LocalizedLink to="/about#contact"><FormattedMessage id="cta_portfolio_on_demand_link"/></LocalizedLink>.</p>
+
 
          </Container>
 
