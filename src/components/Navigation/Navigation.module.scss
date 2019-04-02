@@ -179,16 +179,21 @@
  .bmItemList {
   color: #b8b7ad;
   padding: 0.8em;
+
 }
 
 /* Individual item */
  .bmItem {
   display: inline-block;
-margin-top: 1em;
-    font-size: 1.5rem;
-  color:white;
-
-}
+  margin-top: 1em;
+  font-size: 1.5rem;
+  color:$brand-text;
+  text-decoration: none;
+  &:hover {
+    color:black;
+    text-decoration: underline;
+  }
+} 
 
 /* Styling of overlay */
  .bmOverlay {

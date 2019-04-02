@@ -26,7 +26,7 @@ const PostTemplate = ({ data, pageContext }) => {
   return (
     <Layout locale={pageContext.locale}>
     
-       <SEO title={title} keywords={[`alan tod`, `alan tod`, `react`]} />
+       <SEO title={title} lang={pageContext.locale} keywords={[`alan tod`, `alan tod`, `react`]} />
    
    <div className={styles.projectWrapper}>
     <div className={styles.projectSideColumnFixed}>

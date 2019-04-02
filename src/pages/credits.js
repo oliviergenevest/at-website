@@ -14,14 +14,14 @@ export default ({pageContext, data}) => {
             	<SEO title={data.contentfulCredits.slug} keywords={[`alan tod`, `forest`, `art`]} />
               	<Container text first>
 	             	<div dangerouslySetInnerHTML={{__html:data.contentfulCredits.content.childContentfulRichText.html}}></div>
-					{	
+					{/*	
 					 data.contentfulCredits.illustrations.map( (img , index) => (
 					             <div key={index}>
 					             <Img  fluid={img.fluid}/>
 					             <figcaption>{img.description}</figcaption>
 					             </div>
 					      )
-					 )
+					 )*/
 		         	} 
             	</Container>
               </Layout>
@@ -29,6 +29,21 @@ export default ({pageContext, data}) => {
  }
 
 
+export const pageQuery = graphql`
+  query  CreditPage($locale: String!)  {
+      contentfulCredits(node_locale: {eq: $locale }) {
+        slug
+	    content {
+	        childContentfulRichText {
+	          html
+	        }
+	    }
+
+	  }
+    }
+`
+
+/* version avec listing des illustrations de la page
 export const pageQuery = graphql`
   query  CreditPage($locale: String!)  {
       contentfulCredits(node_locale: {eq: $locale }) {
@@ -46,4 +61,4 @@ export const pageQuery = graphql`
 	    }  
 	  }
     }
-`
+`*/
