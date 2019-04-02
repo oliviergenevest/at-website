@@ -3,8 +3,8 @@
   "projects": "Projects",
   "research": "Research",
   "about alan": "About Alan",
-  "prev": "prev",
-  "next": "next",
+  "previous project": "Previous project",
+  "next project": "Next project",
   "credits": "Credits",
   "name": "Name",
   "placeholder_name": "Your name",
@@ -12,6 +12,7 @@
   "placeholder_email":"Your Email Address",
   "send" : "Send message",
   "cta_portfolio_on_demand":"Portfolio available on ",
-  "cta_portfolio_on_demand_link":"demand"
-
+  "cta_portfolio_on_demand_link":"demand",
+  "last_update":"Last update:",
+  "back" : "Back"
 }

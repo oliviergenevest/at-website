@@ -31,7 +31,8 @@ const PostTemplate = ({ data, pageContext }) => {
    <div className={styles.projectWrapper}>
     <div className={styles.projectSideColumnFixed}>
       <div className={styles.header}> 
-        <LocalizedLink to='/projects' className={styles.backLink}>  &#8592; <span>Back</span></LocalizedLink>
+        <LocalizedLink to='/projects' className={styles.backLink}>  &#8592;   <FormattedMessage id="back"/>
+</LocalizedLink>
         <h1> {title}</h1>
       </div>
       <div className={styles.heroImg}>
@@ -51,14 +52,19 @@ const PostTemplate = ({ data, pageContext }) => {
            
               <div dangerouslySetInnerHTML={{ __html: description.childMarkdownRemark.html }}
               ></div>
-             <p> <FormattedMessage id="cta_portfolio_on_demand"/>
-              <LocalizedLink to="/about#contact"><FormattedMessage id="cta_portfolio_on_demand_link"/></LocalizedLink>.</p>
+             <p> 
+              <FormattedMessage id="cta_portfolio_on_demand"/>
+                <LocalizedLink to="/about#contact">
+                  <FormattedMessage id="cta_portfolio_on_demand_link"/>
+                </LocalizedLink>
+              .
+              </p>
 
 
          </Container>
 
           <Container text >
-           <span>Last update:</span> {updatedAt}
+           <span><FormattedMessage id="last_update"/></span> {updatedAt}
           </Container>
 
           <PostLinks previous={previous} next={next} />

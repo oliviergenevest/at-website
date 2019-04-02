@@ -18,7 +18,7 @@ background-color:$brand-bg;
 
   	    text-decoration: none;
   }
-  span {
+  span:not(:first-child) {
   	color:$brand-text;
     font-weight:bold;
   	display:block;
