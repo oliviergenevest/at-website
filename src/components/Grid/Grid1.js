@@ -8,6 +8,9 @@ import {Link} from 'gatsby'
 const Grid1 = ({image, text1, heroText, text3}) => (
    
       <div className= {styles.gridContainer} >
+	        <div className= {styles.image} > 
+	        	{image} 
+	        </div>
 	       <div className = {styles.inner} >
 		       <div className= {styles.hero}>
 		         <Fade bottom delay={500} distance="20px">
@@ -25,9 +28,7 @@ const Grid1 = ({image, text1, heroText, text3}) => (
 		       </Fade>
 
 			</div>
-	        <div className= {styles.image} > 
-	        	{image} 
-	        </div>
+	       
 
       </div>
  
