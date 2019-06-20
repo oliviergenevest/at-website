@@ -52,6 +52,16 @@ const PostTemplate = ({ data, pageContext }) => {
            
               <div dangerouslySetInnerHTML={{ __html: description.childMarkdownRemark.html }}
               ></div>
+
+              { data.contentfulProject.images && data.contentfulProject.images.map( (img , index) => (
+                         <div key={index}>
+                         <Img  fluid={img.fluid}/>
+                         <figcaption>{img.description}</figcaption>
+                         </div>
+                  )
+              )
+              }
+
              <p> 
               <FormattedMessage id="cta_portfolio_on_demand"/>
                 <LocalizedLink to="/about#contact">
@@ -108,6 +118,12 @@ export const query = graphql`
           excerpt(pruneLength: 320)
         }
       }
+      images  {
+          fluid(maxWidth: 1800) {
+            ...GatsbyContentfulFluid_withWebp
+          }
+          description
+      }  
     }
   }
 `
