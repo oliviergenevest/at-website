@@ -54,7 +54,7 @@ const PostTemplate = ({ data, pageContext }) => {
               ></div>
 
               { data.contentfulProject.images && data.contentfulProject.images.map( (img , index) => (
-                         <div key={index}>
+                         <div key={index} className={styles.listingImageItem}>
                          <Img  fluid={img.fluid}/>
                          <figcaption>{img.description}</figcaption>
                          </div>
