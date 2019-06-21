@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Carousel, { Modal, ModalGateway } from 'react-images'
 import Img from 'gatsby-image'
 import CustomView from './CustomView'
+import styles from './GalleryLightbox.module.scss'
 
 const imgList = [{ source: 'path/to/image-1.jpg', source: 'path/to/image-2.jpg' }];
 
@@ -36,7 +37,7 @@ const GalleryLightbox = (images) => {
 			
             <div>
 	            {images.images.map((img , j) => (
-	              <div onClick={ () => { setModalIsOpen(!modalIsOpen),setSelectedIndex(j)}} key={j}>
+	              <div onClick={ () => { setModalIsOpen(!modalIsOpen),setSelectedIndex(j)}} key={j} className={styles.listingImageItem}>
 	                <Img
 	                  alt={img.description}
 	                  fluid={img.thumbnails}
