@@ -29,9 +29,9 @@ const GalleryLightbox = (images) => {
 
 	return (
 			<div>
-			<b>modalIsOpen : </b> {modalIsOpen ? 'true' : 'false'}
+			{/*<b>modalIsOpen : </b> {modalIsOpen ? 'true' : 'false'}
 			<br/>
-			<b>selectedIndex : </b> {selectedIndex}
+			<b>selectedIndex : </b> {selectedIndex}*/}
 			
 			
             <div>
