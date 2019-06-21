@@ -9,6 +9,7 @@ import Container from '../components/Container/Container'
 import PostLinks from '../components/PostLinks'
 import styles from './project.module.scss'
 import LocalizedLink from '../components/LocalizedLink/LocalizedLink'
+import GalleryLightbox from '../components/GalleryLightbox/GalleryLightbox'
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
@@ -53,15 +54,16 @@ const PostTemplate = ({ data, pageContext }) => {
               <div dangerouslySetInnerHTML={{ __html: description.childMarkdownRemark.html }}
               ></div>
 
-              { data.contentfulProject.images && data.contentfulProject.images.map( (img , index) => (
+              { /*data.contentfulProject.images && data.contentfulProject.images.map( (img , index) => (
                          <div key={index} className={styles.listingImageItem}>
                          <Img  fluid={img.fluid}/>
                          <figcaption>{img.description}</figcaption>
                          </div>
                   )
-              )
+              )*/
               }
 
+              <GalleryLightbox images={data.contentfulProject.images} />
              <p> 
               <FormattedMessage id="cta_portfolio_on_demand"/>
                 <LocalizedLink to="/about#contact">
@@ -119,10 +121,21 @@ export const query = graphql`
         }
       }
       images  {
-          fluid(maxWidth: 1800) {
+        file {
+            details {
+              image {
+                height
+                width
+              }
+            }
+        }
+        fluid(maxWidth: 1800) {
             ...GatsbyContentfulFluid_withWebp
-          }
-          description
+        }
+        thumbnails:fluid(maxWidth: 811) {
+            ...GatsbyContentfulFluid_withWebp
+        }
+        description
       }  
     }
   }
