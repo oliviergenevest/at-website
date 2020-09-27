@@ -13,8 +13,10 @@
   }
 }
 */
-
-  
+.menuWrapper{
+  display: flex;
+    align-items: baseline;
+}
  
 
 .navigation,
@@ -193,7 +195,11 @@
     color:black;
     text-decoration: underline;
   }
+
+  form {margin-left:0!important;}
 } 
+
+
 
 /* Styling of overlay */
  .bmOverlay {

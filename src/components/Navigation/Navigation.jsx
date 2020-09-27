@@ -8,6 +8,7 @@ import config from '../../config/SiteConfig'
 import styles from './Navigation.module.scss'
 import './Headroom.scss'
 import LocalizedLink from '../LocalizedLink/LocalizedLink'
+import DonatePaypalButton from '../DonatePaypalButton'
 import { FormattedMessage } from 'react-intl'
 
 export default class Navigation extends Component {
@@ -78,7 +79,11 @@ export default class Navigation extends Component {
               <LocalizedLink to="/about" activeClassName="active" onClick={() => this.closeMenu()}>
                 <FormattedMessage id="about alan" />
               </LocalizedLink>
-           
+            <span  className="bmItem">
+            <DonatePaypalButton>
+              <FormattedMessage id="donate" />
+            </DonatePaypalButton>
+            </span>
              <div className={styles.mobileNavSocialMedia}>
                 <a href={config.instagramPageUrl} aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                   <FaInstagram />
@@ -104,11 +109,13 @@ export default class Navigation extends Component {
             </div>
             
             <nav className={styles.navigation}>
-              <span>
+              <span className={styles.menuWrapper}>
                 <LocalizedLink to="/research" activeClassName="active"><FormattedMessage id="research" /></LocalizedLink>
                 <LocalizedLink to="/projects" activeClassName="active"><FormattedMessage id="projects" /></LocalizedLink>
                 <LocalizedLink to="/about" activeClassName="active"><FormattedMessage id="about alan" /></LocalizedLink>
-               
+                 <DonatePaypalButton/>
+            
+       
               </span>
             </nav>
              <div className={ styles.bmBurgerButton }>

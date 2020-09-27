@@ -1,0 +1,37 @@
+@import "../config/variables";
+
+
+
+form.formPaypal {
+  margin-bottom:0;
+  margin-left: 1rem;
+  background-color: transparent;
+  padding:0;
+  display:block;
+  height:33px;
+
+
+
+input[type=submit]{
+  background:$brand-cta-bg;
+  border:0;
+  display:inline;
+  margin: 0;
+  color:white;
+  padding:0 1em;
+  /*border:none;*/
+  border-radius:8px;
+  transition:all .3s ease-out;
+  font-size:18px;
+}
+
+
+/* hover and focus states */
+input[type=submit]:hover,
+input[type=submit]:focus{
+  background: lighten($brand-cta-bg,15%);
+  /*outline:none;*/
+    cursor:pointer;
+
+}
+}

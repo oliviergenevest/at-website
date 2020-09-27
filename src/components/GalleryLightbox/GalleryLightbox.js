@@ -10,7 +10,7 @@ const GalleryLightbox = (images) => {
 
 	const [modalIsOpen , setModalIsOpen] = useState(false)
 	const [ selectedIndex, setSelectedIndex] = useState(0)
-	console.log(images)
+	/*console.log(images)*/
 
 	 const PHOTO_SET = images.images.map((image, i) => {
     // creer 2 juex de données un pour lightbox (fullsize) l'autre pour gallery (thumbnails , c'est celui-ci)
