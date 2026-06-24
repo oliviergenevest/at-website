@@ -79,11 +79,11 @@ export default class Navigation extends Component {
               <LocalizedLink to="/about" activeClassName="active" onClick={() => this.closeMenu()}>
                 <FormattedMessage id="about alan" />
               </LocalizedLink>
-            <span  className="bmItem">
-            <DonatePaypalButton>
+           {/*  <span  className="bmItem">
+           <DonatePaypalButton>
               <FormattedMessage id="donate" />
             </DonatePaypalButton>
-            </span>
+            </span>*/}
              <div className={styles.mobileNavSocialMedia}>
                 <a href={config.instagramPageUrl} aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                   <FaInstagram />
