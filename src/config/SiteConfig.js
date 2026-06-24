@@ -1,23 +1,23 @@
 module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
-  siteTitle: "Alan Tod - Forest is art", // Navigation and Site Title
-  siteTitleAlt: "Alan Tod - Forest is art", // Alternative Site title for SEO
-  siteUrl: 'https://alantod.com', // Domain of your site. No trailing slash!
-  siteEmail: 'contact@alantod.com',
+  siteTitle: "Julien Isoré - Forest is art", // Navigation and Site Title
+  siteTitleAlt: "Julien Isoré - Forest is art", // Alternative Site title for SEO
+  siteUrl: 'https://julienisore.com', // Domain of your site. No trailing slash!
+  siteEmail: 'julien.isore@gmail.com',
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logoGris.png', // Used for SEO and manifest
-  siteDescription: 'Alan Tod - Forest is art',
+  siteDescription: 'Julien Isoré - Forest is art',
   siteTel:'',
   author:'Olivier Genevest',
-   authorUrl:'https://oliviergenevest.info/contacts',
-   publisher:'Alan Tod',
+   authorUrl:'https://oliviergenevest.info/',
+   publisher:'Julien Isoré',
     shareImage: '/images/alan-tod-icon.png', // Open Graph Default Share Image. 1200x1200 is recommended
   //siteFBAppID: '123456789', // Facebook App ID
-  facebookPageUrl:'https://www.facebook.com/Alan-Tod-660829114058650/',
-  instagramPageUrl:'https://www.instagram.com/alan.tod',
+  facebookPageUrl:'https://www.facebook.com/julien.isore.7/',
+  instagramPageUrl:'https://www.instagram.com/julien_isore',
   //userTwitter: '@emma', // Twitter Username
   // og: Meta Tags
-  ogSiteName: 'Alan Tod - Forest is art', // Facebook Site Name
+  ogSiteName: 'Julien Isoré - Forest is art', // Facebook Site Name
   ogLanguage: 'en_EN',
   googleAnalyticsID: '',
   

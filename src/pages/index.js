@@ -38,7 +38,7 @@ const IndexPage = ({ pageContext } ) => (
     render={({contentfulHomepage}) => (
        <IntlProvider locale={pageContext.locale} >
           <>
-            <SEO title={contentfulHomepage.subtitle} keywords={[`Alan Tod`, `forest`, `artist`, `art`]} />
+            <SEO title={contentfulHomepage.subtitle} keywords={[`Julien Isoré`, `forest`, `artist`, `art`]} />
             <Grid1 
               image = { <Img fluid={contentfulHomepage.backgroundImage.fluid} /> } 
               heroText = {{text:contentfulHomepage.title}} 

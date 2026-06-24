@@ -1,7 +1,7 @@
 {
   "name": "gatsby-at",
   "private": true,
-  "description": "Alan Tod - Forest artist",
+  "description": "Julien Isoré - Forest artist",
   "version": "0.1.0",
   "author": "Olivier Genevest <contact@oliviergenevest.info>",
   "dependencies": {
@@ -57,7 +57,7 @@
     "typography-breakpoint-constants": "^0.16.19"
   },
   "keywords": [
-    "Alan Tod",
+    "Julien Isoré",
     "Forest",
     "Artist",
     "Art",

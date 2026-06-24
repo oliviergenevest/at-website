@@ -10,7 +10,7 @@ import styles from './reasearch.module.scss'
 export default ({pageContext, data}) => {
     return (
        <Layout locale={pageContext.locale}>
-        <SEO title="Research" keywords={[`alan tod`, `forest`, `art`, 'Research']} />  
+        <SEO title="Research" keywords={[`Julien Isoré`, `forest`, `art`, 'Research']} />  
         <div className={styles.container} >   
           <Fade bottom distance="20px">
              <div 

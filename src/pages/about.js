@@ -13,7 +13,7 @@ export default ({pageContext, data}) => {
 
   return (
               <Layout locale={pageContext.locale}>
-                 <SEO title={data.contentfulAboutAlanPage.slug} keywords={[`alan tod`, `forest`, `art`]} />       
+                 <SEO title={data.contentfulAboutAlanPage.slug} keywords={[`Julien Isoré`, `forest`, `art`]} />       
                  <Img fluid={data.contentfulAboutAlanPage.imagePortraitAlan.fluid} style={{'marginBottom':'2rem'}}/>
                  <Container text >
                    <div dangerouslySetInnerHTML={{__html:data.contentfulAboutAlanPage.content.childMarkdownRemark.html}}></div>   

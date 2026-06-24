@@ -11,7 +11,7 @@ export default ({pageContext, data}) => {
 
     return  (
             <Layout locale={pageContext.locale}>
-            	<SEO title={data.contentfulCredits.slug} keywords={[`alan tod`, `forest`, `art`]} />
+            	<SEO title={data.contentfulCredits.slug} keywords={[`Julien Isoré`, `forest`, `art`]} />
               	<Container text first>
 	             	<div dangerouslySetInnerHTML={{__html:data.contentfulCredits.content.childContentfulRichText.html}}></div>
 					{/*	

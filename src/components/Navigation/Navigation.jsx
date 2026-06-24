@@ -8,7 +8,7 @@ import config from '../../config/SiteConfig'
 import styles from './Navigation.module.scss'
 import './Headroom.scss'
 import LocalizedLink from '../LocalizedLink/LocalizedLink'
-import DonatePaypalButton from '../DonatePaypalButton'
+//import DonatePaypalButton from '../DonatePaypalButton'
 import { FormattedMessage } from 'react-intl'
 
 export default class Navigation extends Component {
@@ -103,7 +103,7 @@ export default class Navigation extends Component {
             <div className={styles.name}>
               <span>
                 <LocalizedLink to="/" >
-                  Alan Tod
+                  Julien Isoré
                 </LocalizedLink>
               </span> 
             </div>
@@ -113,7 +113,7 @@ export default class Navigation extends Component {
                 <LocalizedLink to="/research" activeClassName="active"><FormattedMessage id="research" /></LocalizedLink>
                 <LocalizedLink to="/projects" activeClassName="active"><FormattedMessage id="projects" /></LocalizedLink>
                 <LocalizedLink to="/about" activeClassName="active"><FormattedMessage id="about alan" /></LocalizedLink>
-                 <DonatePaypalButton/>
+             {/*   <DonatePaypalButton/> */}
             
        
               </span>

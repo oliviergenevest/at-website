@@ -10,10 +10,10 @@ const { BLOCKS, MARKS, INLINES } = require('@contentful/rich-text-types')
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://alantod.com`,
-    title: `Alan Tod`,
+    siteUrl: `https://julienisore.com`,
+    title: `Julien Isoré`,
     description: `Forest is art`,
-    author: `Alan Tod`,
+    author: `Julien Isoré`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -97,8 +97,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Alan Tod - Forest is art`,
-        short_name: `Alan Tod`,
+        name: `Julien Isoré- Forest is art`,
+        short_name: `Julien Isoré`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#00B050`,

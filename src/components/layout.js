@@ -72,7 +72,7 @@ const Layout = ({ children, locale, location } ) => (
               
                 <a href={config.facebookPageUrl} aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                   <FaFacebook />
-                </a> <span>© Alan Tod - 2019 -  <LocalizedLink to="/credits"> <FormattedMessage id="credits" /></LocalizedLink>  </span>
+                </a> <span>© Julien Isoré - 2026 -  <LocalizedLink to="/credits"> <FormattedMessage id="credits" /></LocalizedLink>  </span>
               </span>    
             </Container>
           </footer>
